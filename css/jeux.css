@@ -1,1 +1,83 @@
-/*# sourceMappingURL=jeux.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+.container-jeux {
+  width: 250px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+header {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 5px;
+}
+
+.navbar-section nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  background-color: #674ea7;
+}
+
+.navbar-section nav ul li {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.logo {
+  width: 200px;
+}
+
+a:hover {
+  background-color: yellow;
+}
+
+p {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.card-theme {
+  border: 1px solid green;
+}
+
+.item {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+.themes {
+  display: flex;
+  border: 1px solid black;
+}
+
+.jamesWebb,
+.book,
+.geo {
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+}/*# sourceMappingURL=jeux.css.map */

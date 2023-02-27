@@ -1,1 +1,45 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  width: 1440px;
+}
+
+header {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-header ul {
+  display: flex;
+}
+
+.nav-header ul li {
+  padding: 5px;
+}
+
+.navbar-section nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav {
+  background-color: #674ea7;
+}
+
+.navbar-section nav ul li {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.logo {
+  width: 200px;
+}/*# sourceMappingURL=main.css.map */
