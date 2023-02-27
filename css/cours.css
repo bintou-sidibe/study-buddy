@@ -1,1 +1,50 @@
-/*# sourceMappingURL=cours.css.map */
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+}
+
+.bulle {
+  align-items: center;
+  border: 0, 1em solid green;
+}
+
+button {
+  display: flex;
+  border-radius: 50px;
+  background-color: green;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: white;
+  font-size: 40px;
+  gap: 10px;
+}
+
+.reseaux:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  color: white;
+}
+
+.reseaux {
+  cursor: pointer;
+}
+
+.linkedin {
+  margin-right: 15px;
+}
+
+.instagram {
+  margin-right: 15px;
+}
+
+.facebook {
+  margin-left: 15px;
+}/*# sourceMappingURL=cours.css.map */
