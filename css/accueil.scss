@@ -6,6 +6,16 @@
   text-decoration: none;
 }
 
+$colorBgNav: #674ea7;
+$colorText: white;
+
+nav {
+  background-color: $colorBgNav;
+  li a {
+    color: $colorText;
+  }
+}
+
 .header-accueil {
   display: flex;
   align-items: center;

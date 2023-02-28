@@ -6,6 +6,13 @@
   text-decoration: none;
 }
 
+nav {
+  background-color: #674ea7;
+}
+nav li a {
+  color: white;
+}
+
 .header-accueil {
   display: flex;
   align-items: center;
