@@ -31,13 +31,13 @@ footer{
     flex-direction: row;
     justify-content:flex-end;
     padding-right: 20px;
-    color: white;
+    color: violet;
     font-size: 40px;
     gap: 10px;
 }
 .reseaux:hover {
-    background-color:hsl(300, 69%, 71%) ;
-    color:white;
+    background-color: yellow;
+    color: violet;
 }
 .reseaux {
     cursor: pointer;
