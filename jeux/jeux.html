@@ -11,74 +11,124 @@
     <title>Study Buddy Game</title>
     <link rel="stylesheet" href="../css/jeux.css" />
   </head>
+
   <body>
-    <header class="container-header-jeux">
-      <div class="search">
+    <div class="main-jeux">
+      <header class="container-header">
         <img
-          src="/images/Study Buddy.png"
+          src="../images/Study Buddy.png"
           class="logo"
-          alt="logo de l entreprise"
+          alt="logo de l entreprise study-Buddy pour l'éducation"
         />
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="search" placeholder="Recherche..." />
-        <button>Rechercher</button>
-      </div>
+        <div class="search">
+          <div class="navbar-btn">
+            <input
+              type="search"
+              class="input-search"
+              placeholder="Rechercher..."
+            />
+            <button class="btn">
+              <i class="fa-solid fa-magnifying-glass icon-loupe"></i>
+            </button>
+          </div>
+        </div>
+      </header>
 
-      <nav class="nav-header-jeux">
-        <ul>
-          <li><a href="#"> S'inscrire </a></li>
-          <li><a href="#"> Se connecter </a></li>
+      <nav class="navbar">
+        <ul class="navbar-ul">
+          <li class="navbar-li">
+            <a class="navbar-link" href="../index.html">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="cours.html">
+              <i class="fa-solid fa-books"></i> Apprendre
+            </a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="quizz.html">Quizz</a>
+          </li>
+
+          <li class="navbar-li"><a class="navbar-link" href="#">Blog</a></li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="#">Agir ensemble</a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="#">Qui sommes-nous?</a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="#">Nous contacter</a>
+          </li>
+
+          <li class="navbar-li">
+            <a href="#" class="navbar-link">
+              <i class="fa-sharp fa-solid fa-right-to-bracket connexion"></i>
+            </a>
+          </li>
         </ul>
       </nav>
-    </header>
 
-    <section class="navbar-section">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="#">Qui sommes-nous?</a></li>
-          <li><a href="#">Agir-ensemble</a></li>
-          <li><a href="#">Quizz</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Nous contacter</a></li>
+      <p class="intro">
+        <q>
+          Par l'expérience la connaissance, vient <span>levelup</span> ta
+          connaissance en te fendant la poire
+        </q>
+      </p>
+
+      <section class="container-card">
+        <ul class="cards">
+          <li class="card">
+            <a href="/jeux/jeuxCalcul.html">
+              <!-- <img src="/images/jamesWebb.jpg" class="jamesWebb" alt="" />-->
+              <p class="matieres">math</p>
+            </a>
+          </li>
+
+          <li class="card francais">
+            <a href="/jeux/jeufrancais.html">
+              <!--<img src="/images/book.jpg" class="book" alt="" />-->
+              <p class="matieres">Francais</p>
+            </a>
+          </li>
+
+          <li class="card langue">
+            <a href="#">
+              <!--<img src="/images/geo.jpg" class="book" alt="" />-->
+              <p class="matieres">Géographie</p>
+            </a>
+          </li>
+
+          <li class="card svt">
+            <a href="#">
+              <!--<img src="/images/book.jpg" class="book" alt="" />-->
+              <p class="matieres">SVT</p>
+            </a>
+          </li>
+
+          <li class="card">
+            <a href="#">
+              <!-- <img src="/images/jamesWebb.jpg" class="jamesWebb" alt="" />-->
+              <p class="matieres">autre matiere</p>
+            </a>
+          </li>
+
+          <li class="card francais">
+            <a href="#">
+              <!--<img src="/images/book.jpg" class="book" alt="" />-->
+              <p class="matieres">autre matiere</p>
+            </a>
+          </li>
+
+
+          </li>
         </ul>
-      </nav>
-    </section>
-
-    <p class="intro">
-      Par l'expérience la connaissance, vient <span>levelup</span> ta
-      connaissance en te fendant la poire
-    </p>
-
-    <section class="card-theme">
-      <ul class="container-jeux">
-        <li class="jeu math">
-          <a href="/jeux/jeuCalcul.html">
-            <img src="/images/jamesWebb.jpg" class="jamesWebb" alt="" />
-          </a>
-          <p>math</p>
-        </li>
-
-        <li class="jeu francais">
-          <a href="/jeux/jeufrancais.html">
-            <img src="/images/book.jpg" class="book" alt="" />
-          </a>
-          <p>Francais</p>
-        </li>
-
-        <li class="jeu langue">
-          <a href="#">
-            <img src="/images/geo.jpg" class="book" alt="" />
-          </a>
-          <p>Géographie</p>
-        </li>
-
-        <li class="jeu svt">
-          <a href="#">
-            <img src="/images/book.jpg" class="book" alt="" />
-          </a>
-        </li>
-      </ul>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

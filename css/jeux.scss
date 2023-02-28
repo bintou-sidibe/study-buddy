@@ -7,77 +7,140 @@
   color: black;
 }
 
-body {
-  width: 1440px;
-  margin: auto;
+/******************COULEUR******************************/
+$colorViolet: #674ea7;
+$colorYellow: #ffe900;
+$colorVert: #086618;
+
+$colorText: white;
+$colorDetail: white;
+
+$color-degrade: 227deg, rgba(8, 102, 24, 0.7945553221288515) 29%,
+  rgba(103, 78, 167, 0.8365721288515406) 55%,
+  rgba(255, 233, 0, 0.7049194677871149) 79%;
+
+/*************TAILLE**************************************/
+$font-size-nav: 1.3rem;
+$width-logo: 250px;
+
+/*************BORDER-RADUIS***************************************/
+$border-btn: none;
+$search-radius: 17px;
+
+/********************* HEADER ******************************/
+.main-jeux {
+  margin: 0 14%;
 }
 
-.container-jeux {
-  width: 250px;
-  margin-top: 50px;
-  margin: auto;
-}
-
-header {
-  border: 1px solid black;
+.container-header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  ul {
+  justify-content: space-between;
+}
+
+.navbar {
+  background-color: $colorViolet;
+
+  .navbar-ul {
     display: flex;
-    li a {
-      padding: 5px;
-      color: $colorText;
+    padding: 5px;
+    justify-content: space-around;
+
+    .navbar-li {
+      padding: 10px;
+      font-size: $font-size-nav;
+
+      .navbar-link {
+        color: $colorText;
+        &:hover {
+          text-decoration: underline $colorYellow;
+        }
+      }
     }
   }
 }
 
-.navbar-section nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav {
-  background-color: #674ea7;
-}
-
-.navbar-section nav ul li {
-  border-radius: 10px;
-  padding: 10px;
-}
-
 .logo {
-  width: 200px;
+  width: $width-logo;
 }
 
-a:hover {
-  background-color: yellow;
-}
-
-p {
-  margin: 15px 0;
-  text-align: center;
-}
-.card-theme {
-  border: 1px solid green;
-}
-
-.item {
-  border: 1px solid black;
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-}
-
-.themes {
+.search {
   display: flex;
-  border: 1px solid black;
+  align-items: center;
+
+  .navbar-btn {
+    box-shadow: 0px 0px 7px 2px #e0d8d8;
+    border-radius: $search-radius;
+    display: flex;
+    align-items: center;
+
+    .input-search {
+      border: 1px solid rgb(0, 0, 0);
+      border: $border-btn;
+      font-size: 1.3rem;
+      padding: 5px;
+    }
+
+    .icon-loupe {
+      font-size: 1.4rem;
+      padding: 9px 17px 8px 15px;
+      border-radius: 15px;
+      background-image: linear-gradient(to right, #083e66, white);
+      color: $colorDetail;
+    }
+
+    button {
+      background-image: linear-gradient(to left, #083e66, white);
+      color: $colorDetail;
+      padding: 9px;
+      font-weight: bold;
+      border: none;
+      border-radius: 0px 15px 15px 0px;
+      font-size: 1.2rem;
+    }
+  }
 }
 
-.jamesWebb,
-.book,
-.geo {
-  border-radius: 100%;
-  width: 250px;
-  height: 250px;
+.container-card {
+  margin: auto;
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 56px 56px;
+
+    .card {
+      border: 1px solid black;
+      border-radius: 46px;
+      width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      &:hover {
+        -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
+        box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
+      }
+
+      .matieres {
+        background-color: #73a5ca;
+        height: 185px;
+        width: 281px;
+        text-align: center;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 10% 0;
 }
