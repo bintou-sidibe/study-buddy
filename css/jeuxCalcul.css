@@ -9,6 +9,7 @@
 /******************COULEUR******************************/
 /*************TAILLE**************************************/
 /*************BORDER-RADUIS***************************************/
+/*********scss jeux***********/
 /********************* HEADER ******************************/
 .main {
   margin: 0 14%;
@@ -31,12 +32,14 @@
 }
 .search .input-search {
   outline: none;
+  position: relative;
+  left: 50px;
+  z-index: -1;
   box-shadow: 0px 0px 7px 2px #e0d8d8;
   border: none;
   border-radius: 39px;
   font-size: 1.3rem;
   padding: 19px 0 19px 20px;
-  width: 5px;
   animation: 2s ease-in 1s 2 reverse both paused;
 }
 .search .input-search:hover {
@@ -47,12 +50,12 @@
   font-size: 1.4rem;
   padding: 15px;
   border-radius: 29px;
-  background-image: linear-gradient(to right, #083e66, white);
-  color: white;
+  background-image: linear-gradient(to right, #ffaae9, #daf189);
+  color: #2089ef;
 }
 
 button {
-  background-image: linear-gradient(to left, #083e66, white);
+  background-image: linear-gradient(to left, #ffaae9, #daf189);
   color: white;
   padding: 9px;
   font-weight: bold;
@@ -61,44 +64,108 @@ button {
   font-size: 1.2rem;
 }
 
-.navbar {
-  background-color: #674ea7;
-}
-.navbar .navbar-ul {
-  display: flex;
-  padding: 5px;
-  justify-content: space-around;
-}
-.navbar .navbar-ul .navbar-li {
-  padding: 10px;
-  font-size: 1.3rem;
-}
-.navbar .navbar-ul .navbar-li .navbar-link {
-  color: white;
-}
-.navbar .navbar-ul .navbar-li .navbar-link:hover {
-  -webkit-text-decoration: underline #ffe900;
-          text-decoration: underline #ffe900;
+nav {
+  text-align: center;
 }
 
+.menu {
+  display: inline-block;
+}
+
+.menu > li {
+  float: left;
+  color: white;
+  width: 167px;
+  height: 85px;
+  line-height: 85px;
+  background: #2089ef;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li {
+  font-size: 14px;
+  background: #8aefca;
+  padding: 8px 0;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+.sub-menu li:hover {
+  background: #daf189;
+}
+
+.menu > li:hover .sub-menu li {
+  transform: scale(1);
+}
+
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+
+/*********************************************************************************/
+.container-calcul {
+  margin: auto;
+}
+.container-calcul .titre {
+  text-align: center;
+  margin-top: 61px;
+}
+.container-calcul .calcul-h2 {
+  padding: 15px 0;
+}
 .container-calcul .calcul-ul {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 50px;
 }
 .container-calcul .calcul-ul .calcul-li {
-  border: 1px solid black;
+  background-image: linear-gradient(to right, #ffaae9, #daf189);
+  border-radius: 46px;
+  opacity: 0.3;
   width: 450px;
-  height: 320px;
+  height: 392px;
+}
+.container-calcul .calcul-ul .calcul-li:hover {
+  opacity: 1;
+  border: 1px solid black;
+  border-radius: 46px;
+  width: 450px;
+  height: 389px;
+  background-image: radial-gradient(circle, #8aefca, #2089ef);
 }
 .container-calcul .calcul-ul .calcul-li .jeu {
-  width: 442px;
+  width: 415px;
   height: 252px;
+  margin: auto;
+  border-radius: 40px;
   background-color: #4083b6;
 }
-.container-calcul .calcul-ul .calcul-li .calcul-img {
-  width: 100%;
+.container-calcul .calcul-ul .calcul-li .calcul-p {
+  text-align: center;
+}
+.container-calcul .calcul-ul .calcul-li .calcul-p .calcul-img {
+  width: 94%;
+  border-radius: 40px;
 }
 .container-calcul .calcul-ul .calcul-li .text-calcul {
   text-align: center;
+}
+.container-calcul .calcul-ul .calcul-li .calcul-intro {
+  padding: 23px;
 }/*# sourceMappingURL=jeuxCalcul.css.map */

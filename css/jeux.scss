@@ -4,20 +4,30 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  color: black;
 }
 
 /******************COULEUR******************************/
-$colorViolet: #674ea7;
+$colorBeigt: #ffdeac;
 $colorYellow: #ffe900;
-$colorVert: #086618;
+$colorVert: #daf189;
+$colorBleuVert: #8aefca;
+$colorRose: #ffaae9;
+$colorBleu: #2089ef;
 
 $colorText: white;
 $colorDetail: white;
 
-$color-degrade: 227deg, rgba(8, 102, 24, 0.7945553221288515) 29%,
-  rgba(103, 78, 167, 0.8365721288515406) 55%,
-  rgba(255, 233, 0, 0.7049194677871149) 79%;
+// background: rgb(255,170,233);
+// background: -moz-linear-gradient(142deg, rgba(255,170,233,0.9920343137254902) 37%, rgba(255,233,0,1) 100%);
+// background: -webkit-linear-gradient(142deg, rgba(255,170,233,0.9920343137254902) 37%, rgba(255,233,0,1) 100%);
+// background: linear-gradient(142deg, rgba(255,170,233,0.9920343137254902) 37%, rgba(255,233,0,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaae9",endColorstr="#ffe900",GradientType=1);
+
+$color-degrade: linear-gradient(
+  142deg,
+  rgba(255, 170, 233, 0.9920343137254902) 37%,
+  rgba(255, 233, 0, 1) 100%
+);
 
 /*************TAILLE**************************************/
 $font-size-nav: 1.3rem;
@@ -25,10 +35,15 @@ $width-logo: 250px;
 
 /*************BORDER-RADUIS***************************************/
 $border-btn: none;
-$search-radius: 17px;
+$search-radius: 39px;
+
+/*********scss jeux***********/
+$border-li: 46px;
+$border-p-jeu: 40px;
 
 /********************* HEADER ******************************/
-.main-jeux {
+
+.main {
   margin: 0 14%;
 }
 
@@ -36,10 +51,59 @@ $search-radius: 17px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: $width-logo;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+  .input-search {
+    outline: none;
+    position: relative;
+    left: 50px;
+    z-index: -1;
+    box-shadow: 0px 0px 7px 2px #e0d8d8;
+    border: $border-btn;
+    border-radius: 39px;
+    font-size: 1.3rem;
+    padding: 19px 0 19px 20px;
+    // width: 5px;
+    animation: 2s ease-in 1s 2 reverse both paused;
+
+    &:hover {
+      width: 100%;
+    }
+  }
+}
+
+.icon-loupe {
+  font-size: 1.4rem;
+  padding: 15px;
+  border-radius: 29px;
+  background-image: linear-gradient(to right, $colorRose, $colorVert);
+  color: $colorBleu;
+}
+
+button {
+  background-image: linear-gradient(to left, $colorRose, $colorVert);
+  color: $colorDetail;
+  padding: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
 }
 
 .navbar {
-  background-color: $colorViolet;
+  background-color: $colorBleu;
+  // margin-top: 53px;
+  height: 95px;
+  padding-top: 21px;
 
   .navbar-ul {
     display: flex;
@@ -58,10 +122,6 @@ $search-radius: 17px;
       }
     }
   }
-}
-
-.logo {
-  width: $width-logo;
 }
 
 .search {
@@ -103,16 +163,22 @@ $search-radius: 17px;
 
 .container-card {
   margin: auto;
+  .titre {
+    text-align: center;
+    margin: 61px;
+  }
 
   .cards {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 56px 56px;
+    width: 76%;
+    margin: auto;
 
     .card {
       border: 1px solid black;
-      border-radius: 46px;
+      border-radius: $border-li;
       width: 300px;
       height: 200px;
       display: flex;
@@ -129,7 +195,7 @@ $search-radius: 17px;
         height: 185px;
         width: 281px;
         text-align: center;
-        border-radius: 40px;
+        border-radius: $border-p-jeu;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -142,5 +208,5 @@ $search-radius: 17px;
 .intro {
   text-align: center;
   font-size: 1.3rem;
-  margin: 10% 0;
+  margin: 8% 0;
 }

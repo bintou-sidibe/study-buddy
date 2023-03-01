@@ -4,14 +4,14 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
-  color: black;
 }
 
 /******************COULEUR******************************/
 /*************TAILLE**************************************/
 /*************BORDER-RADUIS***************************************/
+/*********scss jeux***********/
 /********************* HEADER ******************************/
-.main-jeux {
+.main {
   margin: 0 14%;
 }
 
@@ -19,10 +19,55 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 250px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search .input-search {
+  outline: none;
+  position: relative;
+  left: 50px;
+  z-index: -1;
+  box-shadow: 0px 0px 7px 2px #e0d8d8;
+  border: none;
+  border-radius: 39px;
+  font-size: 1.3rem;
+  padding: 19px 0 19px 20px;
+  animation: 2s ease-in 1s 2 reverse both paused;
+}
+.search .input-search:hover {
+  width: 100%;
+}
+
+.icon-loupe {
+  font-size: 1.4rem;
+  padding: 15px;
+  border-radius: 29px;
+  background-image: linear-gradient(to right, #ffaae9, #daf189);
+  color: #2089ef;
+}
+
+button {
+  background-image: linear-gradient(to left, #ffaae9, #daf189);
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
 }
 
 .navbar {
-  background-color: #674ea7;
+  background-color: #2089ef;
+  height: 95px;
+  padding-top: 21px;
 }
 .navbar .navbar-ul {
   display: flex;
@@ -41,17 +86,13 @@
           text-decoration: underline #ffe900;
 }
 
-.logo {
-  width: 250px;
-}
-
 .search {
   display: flex;
   align-items: center;
 }
 .search .navbar-btn {
   box-shadow: 0px 0px 7px 2px #e0d8d8;
-  border-radius: 17px;
+  border-radius: 39px;
   display: flex;
   align-items: center;
 }
@@ -81,11 +122,17 @@
 .container-card {
   margin: auto;
 }
+.container-card .titre {
+  text-align: center;
+  margin: 61px;
+}
 .container-card .cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 56px 56px;
+  width: 76%;
+  margin: auto;
 }
 .container-card .cards .card {
   border: 1px solid black;
@@ -115,5 +162,5 @@
 .intro {
   text-align: center;
   font-size: 1.3rem;
-  margin: 10% 0;
+  margin: 8% 0;
 }/*# sourceMappingURL=jeux.css.map */
