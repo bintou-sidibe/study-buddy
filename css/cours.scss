@@ -3,12 +3,14 @@
 .cours-bulle{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 600px;
-    margin-right: 600px;  
-    border-radius: 5em;
+    min-width: 375px;
 
+}
+
+.cours-bulle img{
+    width:400px;
 }
 
 .cours-container{
@@ -16,6 +18,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
+    min-width: 375px;
     
 }
 
@@ -28,7 +31,7 @@
     align-content: flex-start;
     align-items: flex-start;
     font-family: Poppins;
-   ;
+    min-width: 375px;
 }
 
 h2 {
@@ -41,6 +44,11 @@ h3{
 
 .cours-illustration{
     margin-top: 50px;
+}
+
+.cours-illustration img{
+    width: 650px;
+    height: 400px;
 }
 
 button{
@@ -62,20 +70,18 @@ button:hover{
     color: white;
 }
 
-h4{
+.titre-partenaires{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-style: bold;
-
+    font-weight: bold;
+    font-size: 24px;
 
 }
 .cours-partenaires{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 24px;
-    font-style: bold;
 }
 
 .cours-aide{
@@ -85,7 +91,7 @@ h4{
     left: 10px;
 }
 
-.aide:hover{
+.cours-aide:hover{
     background-color: black;
     color: white;
 }
@@ -106,13 +112,10 @@ footer{
     padding: 0;
 }
 
-.reseaux{
+.cours-reseaux {
     display: flex;
     flex-direction: row;
-}
-
-
-.reseaux {
+    align-content: flex-end;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -120,6 +123,7 @@ footer{
 .linkedin{
    margin-right: 20px; 
    cursor: pointer;
+   padding: 10px;
 }
 
 .linkedin:hover {
@@ -127,7 +131,6 @@ footer{
     color: white;
 }
    
-
 .instagram{
     margin-right: 20px; 
     cursor: pointer;
@@ -149,3 +152,21 @@ footer{
     color: white;
 }
 
+@media (max-width:375px) {
+    .cours-container{
+        margin: auto;
+    }
+    .cours-illustration img{
+        width: 350px;
+    }
+    .cours-colonne1{
+        padding: 50px;
+    }
+    button{
+        width: 70%;
+    }
+
+    .cours-bulle img{
+        width: 350px;
+}
+}
