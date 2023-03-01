@@ -1,50 +1,141 @@
-.container {
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Poppins:wght@300;500&display=swap");
+.cours-bulle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 600px;
+  margin-right: 600px;
+  border-radius: 5em;
+}
+
+.cours-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
-  margin: auto;
 }
 
-.bulle {
-  align-items: center;
-  border: 0, 1em solid green;
+.cours-colonne1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 600px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  font-family: Poppins;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.cours-illustration {
+  margin-top: 50px;
 }
 
 button {
-  display: flex;
   border-radius: 50px;
-  background-color: green;
+  background-color: #7f9fd2;
+  color: #87cea5;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  border-radius: 1px 30px 1px 30px;
+  padding: 0 15px;
+  width: 100%;
+  cursor: pointer;
+  background-image: none !important;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-style: bold;
+}
+
+.cours-partenaires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 24px;
+  font-style: bold;
+}
+
+.cours-aide {
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+}
+
+.aide:hover {
+  background-color: black;
   color: white;
 }
 
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 20px;
-  color: white;
+  justify-content: space-between;
+  color: #87cea5;
   font-size: 40px;
   gap: 10px;
+  align-items: baseline;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  background-color: #7f9fd2;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.reseaux:hover {
-  background-color: hsl(300deg, 69%, 71%);
-  color: white;
+.reseaux {
+  display: flex;
+  flex-direction: row;
 }
 
 .reseaux {
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .linkedin {
-  margin-right: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  background-color: black;
+  color: white;
 }
 
 .instagram {
-  margin-right: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.instagram:hover {
+  background-color: black;
+  color: white;
 }
 
 .facebook {
-  margin-left: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.facebook:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=cours.css.map */
