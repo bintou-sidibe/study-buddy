@@ -184,7 +184,8 @@ input[type=button] {
 }
 
 .headerlogo {
-  width: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .profil-utilisateur {
