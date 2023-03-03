@@ -1,1 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body{
+    background-image:url(/css/images/background3.avif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity:80% ;
+   
+}
+h2, h1{
+    font-family: Poppins sans-serif;
+}
+
+.titre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 58px;
+}
+
+  h2{
+    font-size:24px ;
+  }
+  
+  input[type="submit"]{
+    border-radius: 46px;
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    box-shadow: #ffaae9;
+    gap: 60px;
+
+  }
+
+  .petit-box{
+    border: 1px solid #f6f8f9;;
+    border-radius: 46px;
+    font-family:Poppins ;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+
+  }
+
+  form {
+    border: 1px solid #f6f8f9;
+    border-radius: 46px;
+  }
+  
+  .boite {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    width: 400px;
+    border-radius: 46px;
+  }
+
+  #carouselExampleCaptions{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    margin-top: 60px;
+    border-radius: 46px;
+    font-family:Poppins ;
+    
+  }
+
+.image{
+    width: 400px;
+    height: 300px;
+    border-radius: 46px;
+}
+
+  .moyen-box{
+    border: 1px solid #f6f8f9;;
+    border-radius: 46px;
+    font-family:Poppins ;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+  }
+  
+  .couleur{
+     color: #f1f1f1;
+  }
+  
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f6f8f9;;
+    box-sizing: border-box;
+    font-family:Poppins ;
+  }
+
+  input[type=text]{
+    font-family:Poppins ;
+    color: #2089ef important;
+
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-image: linear-gradient(#daf189, #ffaae9);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    color:#ffaae9 ;
+  }
+
+  #carouselExampleCaptions{
+    width: 600px;
+    margin-bottom: 30px; 
+  }
+
+  h5{
+    color:black
+  }
+
+.photo{
+    border-radius: 46px;
+}
+
+@media (max-width:375px) {
+  body{
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+  
+  #carouselExampleCaptions {
+    margin: auto;
+    width: 400px; 
+  }
+}
 
