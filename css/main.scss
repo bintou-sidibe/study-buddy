@@ -108,7 +108,7 @@ $search-radius: 39px;
       box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
 
       .navbar-link {
-        color: $colorText;
+        color: black;
         &:hover {
           text-decoration: underline $colorYellow;
         }
@@ -118,19 +118,14 @@ $search-radius: 39px;
 }
 /******************************************************************/
 
-.items-ul-jouer {
-  border: 1px solid black;
+// .items-ul-jouer {
+//   border: 1px solid black;
 
-  .item-li-jouer {
-    border: 1px solid black;
-    padding: 7px;
-
-    a {
-      &:hover {
-      }
-    }
-  }
-}
+//   .item-li-jouer {
+//     border: 1px solid black;
+//     padding: 7px;
+//   }
+// }
 
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {

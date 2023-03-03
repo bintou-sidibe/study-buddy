@@ -56,59 +56,85 @@
   font-size: 1.2rem;
 }
 
-.navbar {
-  background-color: #2089ef;
-  height: 95px;
-  padding-top: 21px;
-}
-.navbar .navbar-ul {
-  display: flex;
-  padding: 5px;
-  justify-content: space-around;
-}
-.navbar .navbar-ul .navbar-li {
-  padding: 10px;
-  font-size: 1.3rem;
-}
-.navbar .navbar-ul .navbar-li .navbar-link {
-  color: white;
-}
-.navbar .navbar-ul .navbar-li .navbar-link:hover {
-  -webkit-text-decoration: underline #ffe900;
-          text-decoration: underline #ffe900;
+.nav {
+  text-align: center;
 }
 
-.search {
-  display: flex;
-  align-items: center;
+.navbar-li {
+  list-style-type: none;
 }
-.search .navbar-btn {
-  box-shadow: 0px 0px 7px 2px #e0d8d8;
-  border-radius: 39px;
-  display: flex;
-  align-items: center;
+
+.navbar-link {
+  color: black;
 }
-.search .navbar-btn .input-search {
-  border: 1px solid rgb(0, 0, 0);
-  border: none;
-  font-size: 1.3rem;
-  padding: 5px;
+
+.menu {
+  display: inline-block;
 }
-.search .navbar-btn .icon-loupe {
-  font-size: 1.4rem;
-  padding: 9px 17px 8px 15px;
-  border-radius: 15px;
-  background-image: linear-gradient(to right, #083e66, white);
+
+.menu > li {
+  float: left;
   color: white;
+  width: 146px;
+  height: 85px;
+  line-height: 85px;
+  background: #2089ef;
+  cursor: pointer;
+  font-size: 1.5rem;
+  list-style-type: none;
 }
-.search .navbar-btn .btn {
-  background-image: linear-gradient(to left, #083e66, white);
+
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li {
+  font-size: 14px;
+  background: #8aefca;
+  padding: 8px 0;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+  list-style-type: none;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+.sub-menu li:hover {
+  background: #daf189;
+}
+
+.menu > li:hover .sub-menu li {
+  transform: scale(1);
+}
+
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+
+.sub-link {
+  color: black;
+  text-decoration: none;
+}
+
+.details:hover {
+  color: #ffdeac;
+}
+
+.items-icons {
   color: white;
-  padding: 9px;
-  font-weight: bold;
-  border: none;
-  border-radius: 0px 15px 15px 0px;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .container-card {
@@ -135,9 +161,14 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+  list-style-type: none;
 }
 .container-card .cards .card:hover {
   box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
+}
+.container-card .cards .card .jeuxNav {
+  text-decoration: none;
+  color: black;
 }
 .container-card .cards .card .matieres {
   background-color: #73a5ca;
