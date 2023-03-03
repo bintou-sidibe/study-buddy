@@ -3,7 +3,7 @@
 /*CSS rules to specify families
 font-family: 'Poppins', sans-serif;*/
 /* Couleurs du  logo
-Bleu : 2089EF
+Bleu : #2089EF
 Bleu-vert: #8AEAFCA
 Beige : #FFDEAC
 Vert : #DAF189
@@ -20,7 +20,7 @@ Rose : #FFAAE9
 .quiz-body h1 {
   font-family: Poppins, sans-serif;
   font-size: 100px;
-  color: black;
+  color: darkblue;
   text-align: center;
 }
 
