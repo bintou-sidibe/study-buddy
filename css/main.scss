@@ -1,6 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/******************COULEUR******************************/
+$colorBeigt: #ffdeac;
+$colorYellow: #ffe900;
+$colorVert: #daf189;
+$colorBleuVert: #8aefca;
+$colorRose: #ffaae9;
+$colorBleu: #2089ef;
+
+$colorText: white;
+$colorDetail: white;
+
+$color-degrade: linear-gradient(
+  142deg,
+  rgba(255, 170, 233, 0.9920343137254902) 37%,
+  rgba(255, 233, 0, 1) 100%
+);
+
+/*************TAILLE**************************************/
+$font-size-nav: 1.3rem;
+$width-logo: 250px;
+
+/*************BORDER-RADUIS*******************************/
+$border-btn: none;
+$search-radius: 39px;
+
+/********************* HEADER *****************************/
+.main {
+  margin: 0 14%;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: $width-logo;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+
+  .input-search {
+    outline: none;
+    position: relative;
+    left: 50px;
+    z-index: -1;
+    box-shadow: 0px 0px 7px 2px #e0d8d8;
+    border: $border-btn;
+    border-radius: 39px;
+    font-size: 1.3rem;
+    padding: 19px 0 19px 20px;
+    // width: 5px;
+    animation: 2s ease-in 1s 2 reverse both paused;
+
+    &:hover {
+      width: 100%;
+    }
+  }
+}
+
+.icon-loupe {
+  font-size: 1.4rem;
+  padding: 15px;
+  border-radius: 29px;
+  background-image: linear-gradient(to right, $colorRose, $colorVert);
+  color: $colorBleu;
+}
+
+.btn {
+  background-image: linear-gradient(to left, $colorRose, $colorVert);
+  color: $colorDetail;
+  padding: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  background-color: $colorBleu;
+  height: 95px;
+  padding-top: 21px;
+  position: sticky;
+  top: 0;
+
+  .navbar-ul {
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+
+    .navbar-li {
+      padding: 10px;
+      font-size: $font-size-nav;
+      border: 1px solid black;
+      text-align: center;
+      box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
+
+      .navbar-link {
+        color: $colorText;
+        &:hover {
+          text-decoration: underline $colorYellow;
+        }
+      }
+    }
+  }
+}
+/******************************************************************/
+
+.items-ul-jouer {
+  border: 1px solid black;
+
+  .item-li-jouer {
+    border: 1px solid black;
+    padding: 7px;
+
+    
+  }
+}
+
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin-top: 39px;
+    .input-search {
+      left: 6px;
+    }
+  }
+
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+
+  .menu > li {
+    float: none;
+  }
+}
+
+/******************************************************************/
+
 @import "accueil.scss";
 @import "jeux.scss";
+@import "cours.scss"; 
+@import "profil.scss";
+@import "quiz.scss";                            
+@import "felicitation.scss";                                             
 @import "cours.scss";
 @import "profil.scss";
 @import "page-profil.scss";
+@import "jeuxCalcul.scss";
+
+
+
+
+
 

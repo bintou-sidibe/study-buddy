@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+/*CSS rules to specify families
+font-family: 'Poppins', sans-serif;*/
+/* Couleurs du  logo
+Bleu : 2089EF
+Bleu-vert: #8AEAFCA
+Beige : #FFDEAC
+Vert : #DAF189
+Jaune : #FFE900
+Rose : #FFAAE9
+*/
+.quiz-body {
+  background: linear-gradient(45deg, #2089ef, #ffdeac);
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+}
+
+.quiz-body h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+}
+
+.quiz-body form {
+  min-width: 325px;
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.quiz-body fieldset {
+  border-left: 5px solid #FFDEAC;
+  border-top: 1px solid #FFDEAC;
+  border-right: 1px solid #FFDEAC;
+  border-bottom: 1px solid #FFDEAC;
+  margin-bottom: 20px;
+  padding: 0;
+  border-radius: 46px 36px 0px 0px;
+}
+
+.label-quiz {
+  background-color: #FFDEAC;
+  margin: 0;
+  padding: 10px;
+  border-radius: 46px 36px 0px 0px;
+}
+
+.quiz-body label {
+  display: block;
+  padding: 10px;
+}
+
+.quiz-body hr {
+  border: 0px;
+  border-bottom: 1px solid #FFDEAC;
+}
+
+.quiz-body input[type=submit] {
+  display: block;
+  width: 20%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-image: linear-gradient(to right, #DAF189, #FFAAE9);
+  min-width: 300px;
+  border-radius: 46px;
+  border: 1px;
+}
+
+.quiz-body input[type=submit]:hover {
+  color: #2089ef;
+  cursor: pointer;
+}/*# sourceMappingURL=quiz.css.map */
