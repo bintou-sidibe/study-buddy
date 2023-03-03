@@ -74,7 +74,6 @@
   background-color: #2089ef;
   height: 95px;
   padding-top: 21px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -94,8 +93,7 @@
   color: white;
 }
 .navbar .navbar-ul .navbar-li .navbar-link:hover {
-  -webkit-text-decoration: underline #ffe900;
-          text-decoration: underline #ffe900;
+  text-decoration: underline #ffe900;
 }
 
 /******************************************************************/
@@ -106,21 +104,25 @@
   border: 1px solid black;
   padding: 7px;
 }
+
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
@@ -272,6 +274,7 @@ h5 {
     background-repeat: no-repeat;
     opacity: 80%;
   }
+
   #carouselExampleCaptions {
     margin: auto;
     width: 400px;
@@ -353,8 +356,7 @@ h5 {
   color: white;
 }
 .navbar .navbar-ul .navbar-li .navbar-link:hover {
-  -webkit-text-decoration: underline #ffe900;
-          text-decoration: underline #ffe900;
+  text-decoration: underline #ffe900;
 }
 
 .search {
@@ -368,7 +370,7 @@ h5 {
   align-items: center;
 }
 .search .navbar-btn .input-search {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid black;
   border: none;
   font-size: 1.3rem;
   padding: 5px;
@@ -416,6 +418,7 @@ h5 {
   align-content: center;
 }
 .container-card .cards .card:hover {
+  -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
 }
 .container-card .cards .card .matieres {
@@ -441,16 +444,19 @@ h5 {
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
@@ -519,7 +525,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 2px 2px 6px #00000040;
 }
 
 a:active {
@@ -559,14 +565,6 @@ input[type=button] {
   width: 150px;
   font-size: 1rem;
   cursor: pointer;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
 }
 
 ::placeholder {
@@ -629,9 +627,11 @@ input[type=button] {
   p {
     font-size: 1.2rem;
   }
+
   input {
     width: 160px;
   }
+
   .headerlogo img {
     width: 60px;
   }
@@ -724,8 +724,10 @@ font-family: 'Poppins', sans-serif;*/
 
 .felicitation-body section {
   /*background: linear-gradient(45deg, #2089ef, #ffdeac);*/
-  background: rgb(255, 222, 172);
-  background: linear-gradient(45deg, rgb(255, 222, 172) 10%, rgb(32, 137, 239) 45%, rgb(255, 222, 172) 90%);
+  background: #ffdeac;
+  background: -moz-linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
+  background: -webkit-linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
+  background: linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdeac",endColorstr="#ffdeac",GradientType=1);
   background-size: cover;
   height: 100vh;
@@ -778,6 +780,7 @@ font-family: 'Poppins', sans-serif;*/
   h1 {
     font-size: 36px;
   }
+
   .felicitation-choix {
     gap: 35px;
   }
@@ -841,7 +844,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 2px 2px 6px #00000040;
 }
 
 a:active {
@@ -881,14 +884,6 @@ input[type=button] {
   width: 150px;
   font-size: 1rem;
   cursor: pointer;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
 }
 
 ::placeholder {
@@ -951,9 +946,11 @@ input[type=button] {
   p {
     font-size: 1.2rem;
   }
+
   input {
     width: 160px;
   }
+
   .headerlogo img {
     width: 60px;
   }
@@ -991,7 +988,7 @@ ol li {
   font-size: 1.2rem;
   padding: 20px 30px;
   margin: 10px 0;
-  background: rgb(23, 23, 23);
+  background: #171717;
   z-index: 5;
   position: relative;
   cursor: pointer;
@@ -1130,20 +1127,25 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .headerlogo {
     width: 50%;
     margin-top: 0;
   }
+
   .profil-utilisateur {
     width: 80px;
     height: 80px;
   }
+
   .presentation-profil {
     margin-top: 10px;
   }
+
   .flex-box {
     flex-direction: column;
   }
+
   .sections {
     width: 100%;
     margin-left: 0;
@@ -1151,14 +1153,17 @@ body {
     margin-top: 0;
     padding-bottom: 0;
   }
+
   .arbreprogression {
     width: 100%;
     text-align: center;
   }
+
   .imgarbre {
     width: 80%;
     padding: 0;
   }
+
   .timeline {
     width: 80%;
     margin: 0 auto;
@@ -1414,21 +1419,27 @@ body {
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
+
   .menu {
     margin-top: 39px;
   }
 }
-/******************************************************************//*# sourceMappingURL=main.css.map */
+/******************************************************************/
+
+/*# sourceMappingURL=main.css.map */
