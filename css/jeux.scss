@@ -75,7 +75,7 @@ $border-p-jeu: 40px;
   color: $colorBleu;
 }
 
-button {
+.btn {
   background-image: linear-gradient(to left, $colorRose, $colorVert);
   color: $colorDetail;
   padding: 9px;
@@ -135,7 +135,7 @@ button {
       color: $colorDetail;
     }
 
-    button {
+    .btn {
       background-image: linear-gradient(to left, #083e66, white);
       color: $colorDetail;
       padding: 9px;
