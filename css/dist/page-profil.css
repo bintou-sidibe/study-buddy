@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+.profil-containerheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerlogo {
+  width: 200px;
+  height: 200px;
+}
+
+.profil-utilisateur {
+  height: 80px;
+}
+
+.presentation-profil h2 {
+  margin: 0;
+}
+
+.flex-box {
+  display: flex;
+  margin: 10px;
+}
+
+ol {
+  width: 300px;
+  list-style: none;
+}
+
+ol li {
+  font-size: 1.2rem;
+  padding: 20px 30px;
+  margin: 10px 0;
+  background: #171717;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+ol li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+ol li:hover::before {
+  width: 100%;
+}
+
+ol li:nth-child(1)::before {
+  background: #4285f4;
+}
+
+ol li:nth-child(2)::before {
+  background: #db4437;
+}
+
+ol li:nth-child(3)::before {
+  background: #f4b400;
+}
+
+ol li:nth-child(4)::before {
+  background: #0f9d58;
+}
+
+ol li:hover {
+  transform: translateX(20px);
+}
+
+.sections {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 70px;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.presentation-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgarbre {
+  width: 70%;
+  height: 70%;
+  padding: 27px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-object {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.timeline-object.complete::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 100px;
+  background-color: #1DBF73;
+  left: 23px;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+.timeline-status {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: #1DBF73;
+}
+
+.timeline-object:not(.complete) .timeline-status {
+  background: #ffffff;
+  border: 4px solid #C5C5C5;
+}
+
+.timeline-content {
+  margin-left: 15px;
+}
+
+.timeline-content h3 {
+  color: #1DBF73;
+  background: #CFF6CF;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.timeline-content span {
+  color: #103B27;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.timeline-object:not(.complete) .timeline-content h3 {
+  color: #8A8A8A;
+  background: #E1E1DF;
+}
+
+.arbreprogression {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(45deg, #2089ef, #ffdeac);
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .profil-containerheader {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerlogo {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .profil-utilisateur {
+    width: 80px;
+    height: 80px;
+  }
+
+  .presentation-profil {
+    margin-top: 10px;
+  }
+
+  .flex-box {
+    flex-direction: column;
+  }
+
+  .sections {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .arbreprogression {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgarbre {
+    width: 80%;
+    padding: 0;
+  }
+
+  .timeline {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

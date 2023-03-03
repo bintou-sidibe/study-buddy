@@ -1,0 +1,30 @@
+Front-end Style Guide
+Layout
+The designs were created to the following widths:
+-Mobile: 375px
+-Desktop: 768px
+Colors Primary
+ colorbeigt #ffdeac;
+ colorYellow #ffe900;
+ colorVert#daf189;
+ colorbleuvert#8aefca
+ colorrose#ffaae9
+ colorbleu#2089ef
+         #4285f4
+         #db4437
+         #f4b400
+         #Of9d58
+         #1dbf73
+         #c5c5c5
+         #fffff
+ linear-gradient(45deg #2089ef #ffdeac)
+Typography
+Headings
+Family: Poppins
+font-size : 300,500
+Icons
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+Font Awesome
+IcoMoon
+Ionicons
