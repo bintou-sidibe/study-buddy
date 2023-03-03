@@ -27,11 +27,11 @@ $color-degrade: linear-gradient(
 $font-size-nav: 1.3rem;
 $width-logo: 250px;
 
-/*************BORDER-RADUIS***************************************/
+/*************BORDER-RADUIS*******************************/
 $border-btn: none;
 $search-radius: 39px;
 
-/********************* HEADER ******************************/
+/********************* HEADER *****************************/
 .main {
   margin: 0 14%;
 }
@@ -116,6 +116,7 @@ $search-radius: 39px;
     }
   }
 }
+/******************************************************************/
 
 .items-ul-jouer {
   border: 1px solid black;
@@ -130,6 +131,31 @@ $search-radius: 39px;
     }
   }
 }
+
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin-top: 39px;
+    .input-search {
+      left: 6px;
+    }
+  }
+
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+
+  .menu > li {
+    float: none;
+  }
+}
+
+/******************************************************************/
 
 @import "accueil.scss";
 @import "jeux.scss";

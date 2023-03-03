@@ -58,7 +58,7 @@ $border-p-jeu: 40px;
     border-radius: 39px;
     font-size: 1.3rem;
     padding: 19px 0 19px 20px;
-    // width: 5px;
+
     animation: 2s ease-in 1s 2 reverse both paused;
 
     &:hover {
@@ -87,7 +87,6 @@ $border-p-jeu: 40px;
 
 .navbar {
   background-color: $colorBleu;
-  // margin-top: 53px;
   height: 95px;
   padding-top: 21px;
 
@@ -196,3 +195,30 @@ $border-p-jeu: 40px;
   font-size: 1.3rem;
   margin: 8% 0;
 }
+
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin-top: 39px;
+    .input-search {
+      left: 6px;
+    }
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+
+  .menu > li {
+    float: none;
+  }
+}
+
+.menu {
+  margin-top: 39px;
+}
+/******************************************************************/

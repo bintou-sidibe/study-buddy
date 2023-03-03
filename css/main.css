@@ -8,8 +8,8 @@
 
 /******************COULEUR******************************/
 /*************TAILLE**************************************/
-/*************BORDER-RADUIS***************************************/
-/********************* HEADER ******************************/
+/*************BORDER-RADUIS*******************************/
+/********************* HEADER *****************************/
 .main {
   margin: 0 14%;
 }
@@ -53,7 +53,7 @@
   color: #2089ef;
 }
 
-button {
+.btn {
   background-image: linear-gradient(to left, #ffaae9, #daf189);
   color: white;
   padding: 9px;
@@ -90,6 +90,7 @@ button {
           text-decoration: underline #ffe900;
 }
 
+/******************************************************************/
 .items-ul-jouer {
   border: 1px solid black;
 }
@@ -97,14 +98,26 @@ button {
   border: 1px solid black;
   padding: 7px;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin-top: 39px;
+  }
+  .search .input-search {
+    left: 6px;
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .menu > li {
+    float: none;
+  }
 }
-
+/******************************************************************/
 /******************COULEUR******************************/
 /*************TAILLE**************************************/
 /*************BORDER-RADUIS***************************************/
@@ -153,7 +166,7 @@ button {
   color: #2089ef;
 }
 
-button {
+.btn {
   background-image: linear-gradient(to left, #ffaae9, #daf189);
   color: white;
   padding: 9px;
@@ -208,7 +221,7 @@ button {
   background-image: linear-gradient(to right, #083e66, white);
   color: white;
 }
-.search .navbar-btn button {
+.search .navbar-btn .btn {
   background-image: linear-gradient(to left, #083e66, white);
   color: white;
   padding: 9px;
@@ -264,14 +277,30 @@ button {
   margin: 8% 0;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-decoration: none;
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin-top: 39px;
+  }
+  .search .input-search {
+    left: 6px;
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .menu > li {
+    float: none;
+  }
+}
+.menu {
+  margin-top: 39px;
 }
 
+/******************************************************************/
 /******************COULEUR******************************/
 /*************TAILLE**************************************/
 /*************BORDER-RADUIS***************************************/
@@ -449,6 +478,7 @@ button {
 }
 .container-calcul .calcul-ul .calcul-li .container-jeu:hover .ecran {
   background-color: white;
+  background-image: linear-gradient(0deg, #23760d 23%, #3dabbe 25%);
   border: 1px solid;
   height: 73%;
   width: 98.4%;
@@ -483,7 +513,7 @@ button {
 .container-calcul .calcul-ul .calcul-li .container-jeu:hover .container-item-jeu .calcul-intro {
   display: flex;
   position: absolute;
-  bottom: 16%;
+  bottom: 4%;
   display: flex;
   left: 41px;
   background-color: white;
@@ -517,4 +547,26 @@ button {
   background-color: #74d96d;
 }
 
-/*********************************************************************************//*# sourceMappingURL=main.css.map */
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin-top: 39px;
+  }
+  .search .input-search {
+    left: 6px;
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .menu > li {
+    float: none;
+  }
+  .menu {
+    margin-top: 39px;
+  }
+}
+/******************************************************************//*# sourceMappingURL=main.css.map */
