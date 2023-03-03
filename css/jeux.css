@@ -1,1 +1,183 @@
-/*# sourceMappingURL=jeux.css.map */
+/******************COULEUR******************************/
+/*************TAILLE**************************************/
+/*************BORDER-RADUIS***************************************/
+/*********scss jeux***********/
+/********************* HEADER ******************************/
+.main {
+  margin: 0 14%;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 250px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search .input-search {
+  outline: none;
+  position: relative;
+  left: 50px;
+  z-index: -1;
+  box-shadow: 0px 0px 7px 2px #e0d8d8;
+  border: none;
+  border-radius: 39px;
+  font-size: 1.3rem;
+  padding: 19px 0 19px 20px;
+  animation: 2s ease-in 1s 2 reverse both paused;
+}
+.search .input-search:hover {
+  width: 100%;
+}
+
+.icon-loupe {
+  font-size: 1.4rem;
+  padding: 15px;
+  border-radius: 29px;
+  background-image: linear-gradient(to right, #ffaae9, #daf189);
+  color: #2089ef;
+}
+
+.btn {
+  background-image: linear-gradient(to left, #ffaae9, #daf189);
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  background-color: #2089ef;
+  height: 95px;
+  padding-top: 21px;
+}
+.navbar .navbar-ul {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+}
+.navbar .navbar-ul .navbar-li {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+.navbar .navbar-ul .navbar-li .navbar-link {
+  color: white;
+}
+.navbar .navbar-ul .navbar-li .navbar-link:hover {
+  -webkit-text-decoration: underline #ffe900;
+          text-decoration: underline #ffe900;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search .navbar-btn {
+  box-shadow: 0px 0px 7px 2px #e0d8d8;
+  border-radius: 39px;
+  display: flex;
+  align-items: center;
+}
+.search .navbar-btn .input-search {
+  border: 1px solid rgb(0, 0, 0);
+  border: none;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+.search .navbar-btn .icon-loupe {
+  font-size: 1.4rem;
+  padding: 9px 17px 8px 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, #083e66, white);
+  color: white;
+}
+.search .navbar-btn .btn {
+  background-image: linear-gradient(to left, #083e66, white);
+  color: white;
+  padding: 9px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  font-size: 1.2rem;
+}
+
+.container-card {
+  margin: auto;
+}
+.container-card .titre {
+  text-align: center;
+  margin: 61px;
+}
+.container-card .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 56px 56px;
+  width: 76%;
+  margin: auto;
+}
+.container-card .cards .card {
+  border: 1px solid black;
+  border-radius: 46px;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.container-card .cards .card:hover {
+  box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
+}
+.container-card .cards .card .matieres {
+  background-color: #73a5ca;
+  height: 185px;
+  width: 281px;
+  text-align: center;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 8% 0;
+}
+
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin-top: 39px;
+  }
+  .search .input-search {
+    left: 6px;
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .menu > li {
+    float: none;
+  }
+}
+.menu {
+  margin-top: 39px;
+}
+
+/******************************************************************//*# sourceMappingURL=jeux.css.map */
