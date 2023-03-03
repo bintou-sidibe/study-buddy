@@ -663,7 +663,7 @@ footer {
 
 /*Jusqu’à maintenant, nous ne faisons qu’aligner au centre notre formulaire grâce à Flexbox.
 Les classes drop vont nous permettre d’afficher des petits nuages transparents autour de notre formulaire.*/
-form {
+.body-profil form {
   background: rgba(255, 255, 255, 0.3);
   padding: 3rem;
   border-radius: 20px;
@@ -1153,7 +1153,7 @@ footer {
 
 /*Jusqu’à maintenant, nous ne faisons qu’aligner au centre notre formulaire grâce à Flexbox.
 Les classes drop vont nous permettre d’afficher des petits nuages transparents autour de notre formulaire.*/
-form {
+.body-profil form {
   background: rgba(255, 255, 255, 0.3);
   padding: 3rem;
   border-radius: 20px;
