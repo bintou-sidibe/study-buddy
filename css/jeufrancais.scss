@@ -307,36 +307,8 @@ $border-jeu: 40px;
   }
 }
 
-/*******************MEDIA QUERY MOBILE*****************************/
-@media screen and (max-width: 375px) {
-  .logo {
-    margin: auto;
-  }
-
-  .search {
-    margin-top: 39px;
-    .input-search {
-      left: 6px;
-    }
-  }
-
-  .btn {
-    right: 61px;
-    position: relative;
-  }
-
-  .menu > li {
-    float: none;
-  }
-
-  .menu {
-    margin-top: 39px;
-  }
-}
-
-/******************************************************************/
 /*******************MEDIA QUERY TABLETTE*****************************/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .body-jeux {
     margin: 0;
   }
@@ -350,14 +322,16 @@ $border-jeu: 40px;
   }
 
   .search {
-    margin: auto;
     margin-top: 42px;
     width: 78%;
+    .input-search {
+      left: 11px;
+    }
   }
 
   .btn {
     position: relative;
-    left: -114px;
+    right: 35px;
   }
 
   .menu {
@@ -397,4 +371,36 @@ $border-jeu: 40px;
     }
   }
 }
+/******************************************************************/
+
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin-top: 39px;
+    .input-search {
+      left: 6px;
+    }
+  }
+
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .nav {
+    display: none;
+  }
+
+  .menu > li {
+    float: none;
+  }
+
+  .menu {
+    margin-top: 39px;
+  }
+}
+
 /******************************************************************/

@@ -198,6 +198,12 @@
 
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {
+  .body-jeux {
+    margin: 0;
+  }
+  .main {
+    margin: O;
+  }
   .logo {
     margin: auto;
   }
@@ -238,7 +244,6 @@
   }
   .btn {
     position: relative;
-    left: -114px;
   }
   .menu {
     padding: 0;
@@ -246,5 +251,30 @@
   .menu > li {
     float: none;
   }
-}
-/******************************************************************//*# sourceMappingURL=jeux.css.map */
+  .calcul-ul {
+    padding: 0;
+  }
+  .calcul-ul .calcul-li {
+    width: 100%;
+  }
+  .calcul-ul .calcul-li .container-jeu {
+    width: 100%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu {
+    width: 98%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .calcul-intro {
+    left: 4%;
+    width: 47%;
+    bottom: 0%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom {
+    width: 96.4%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom .cours-btn-jeu {
+    left: 64%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom .test-btn-jeu {
+    left: 81%;
+  }
+}/*# sourceMappingURL=jeux.css.map */

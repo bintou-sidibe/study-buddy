@@ -229,6 +229,7 @@ $border-jeu: 40px;
           }
 
           .ecran {
+            flex-wrap: wrap;
             background-color: white;
             background-image: linear-gradient(0deg, #23760d 23%, #3dabbe 25%);
             border: 1px solid;
@@ -239,6 +240,8 @@ $border-jeu: 40px;
             border-radius: 36px 35px 0 0;
             left: 8px;
             display: flex;
+            justify-content: center;
+            align-content: center;
 
             .pnj {
               display: flex;
@@ -320,6 +323,69 @@ $border-jeu: 40px;
   }
 }
 
+/*******************MEDIA QUERY TABLETTE*****************************/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .body-jeux {
+    margin: 0;
+  }
+
+  .main {
+    margin: O;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin: auto;
+    margin-top: 42px;
+    width: 78%;
+  }
+
+  .btn {
+    position: relative;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu > li {
+    float: none;
+  }
+
+  .calcul-ul {
+    padding: 0;
+    .calcul-li {
+      width: 100%;
+      .container-jeu {
+        width: 100%;
+        .container-item-jeu {
+          width: 98%;
+
+          .calcul-intro {
+            left: 4%;
+            width: 47%;
+            bottom: 0%;
+          }
+          .jeu-bottom {
+            width: 96.4%;
+
+            .cours-btn-jeu {
+              left: 64%;
+            }
+            .test-btn-jeu {
+              left: 81%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/******************************************************************/
+
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {
   .logo {
@@ -347,36 +413,4 @@ $border-jeu: 40px;
   }
 }
 
-/******************************************************************/
-/*******************MEDIA QUERY TABLETTE*****************************/
-@media screen and (max-width: 767px) {
-  .body-jeux {
-    margin: 0;
-  }
-
-  .main {
-    margin: O;
-  }
-
-  .logo {
-    margin: auto;
-  }
-
-  .search {
-    margin: auto;
-    margin-top: 42px;
-    width: 78%;
-  }
-
-  .btn {
-    position: relative;
-    left: -114px;
-  }
-  .menu {
-    padding: 0;
-  }
-  .menu > li {
-    float: none;
-  }
-}
 /******************************************************************/

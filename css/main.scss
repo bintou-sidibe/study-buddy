@@ -194,18 +194,19 @@ $search-radius: 39px;
 /******************************************************************/
 /*******************MEDIA QUERY TABLETTE*****************************/
 @media screen and (max-width: 767px) {
-  .body-jeux {
+  .body-index {
     margin: 0;
   }
 
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
 
-  .search {
+  .search .input-search {
     margin: auto;
     margin-top: 42px;
     width: 78%;
@@ -213,14 +214,18 @@ $search-radius: 39px;
 
   .btn {
     position: relative;
-    left: -114px;
+    bottom: -22px;
+    left: -6px;
+  }
+
+  .menu {
+    padding: 0;
   }
 
   .menu > li {
     float: none;
   }
 }
-/******************************************************************/
 
 @import "accueil.scss";
 @import "jeux.scss";

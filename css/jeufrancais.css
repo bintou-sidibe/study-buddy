@@ -265,31 +265,8 @@
   background-color: #74d96d;
 }
 
-/*******************MEDIA QUERY MOBILE*****************************/
-@media screen and (max-width: 375px) {
-  .logo {
-    margin: auto;
-  }
-  .search {
-    margin-top: 39px;
-  }
-  .search .input-search {
-    left: 6px;
-  }
-  .btn {
-    right: 61px;
-    position: relative;
-  }
-  .menu > li {
-    float: none;
-  }
-  .menu {
-    margin-top: 39px;
-  }
-}
-/******************************************************************/
 /*******************MEDIA QUERY TABLETTE*****************************/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .body-jeux {
     margin: 0;
   }
@@ -300,13 +277,15 @@
     margin: auto;
   }
   .search {
-    margin: auto;
     margin-top: 42px;
     width: 78%;
   }
+  .search .input-search {
+    left: 11px;
+  }
   .btn {
     position: relative;
-    left: -114px;
+    right: 35px;
   }
   .menu {
     padding: 0;
@@ -339,6 +318,32 @@
   }
   .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom .test-btn-jeu {
     left: 81%;
+  }
+}
+/******************************************************************/
+/*******************MEDIA QUERY MOBILE*****************************/
+@media screen and (max-width: 375px) {
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin-top: 39px;
+  }
+  .search .input-search {
+    left: 6px;
+  }
+  .btn {
+    right: 61px;
+    position: relative;
+  }
+  .nav {
+    display: none;
+  }
+  .menu > li {
+    float: none;
+  }
+  .menu {
+    margin-top: 39px;
   }
 }
 /******************************************************************//*# sourceMappingURL=jeufrancais.css.map */
