@@ -29,6 +29,10 @@ $border-p-jeu: 40px;
 
 /********************* HEADER ******************************/
 
+.body-jeux {
+  margin: 0;
+}
+
 .main {
   margin: 0 14%;
 }
@@ -97,7 +101,9 @@ $border-p-jeu: 40px;
 }
 
 .menu {
-  display: inline-block;
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu > li {
@@ -128,6 +134,7 @@ $border-p-jeu: 40px;
   transform-origin: top center;
   transition: all 300ms ease-in-out;
   list-style-type: none;
+  z-index: 1;
 }
 
 .sub-menu li a {
@@ -165,6 +172,7 @@ $border-p-jeu: 40px;
   font-size: 1.7rem;
 }
 
+/*****************************************************/
 .container-card {
   margin: auto;
   .titre {
@@ -245,5 +253,39 @@ $border-p-jeu: 40px;
 
 .menu {
   margin-top: 39px;
+}
+/******************************************************************/
+/*******************MEDIA QUERY TABLETTE*****************************/
+@media screen and (max-width: 767px) {
+  .body-jeux {
+    margin: 0;
+  }
+
+  .main {
+    margin: O;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin: auto;
+    margin-top: 42px;
+    width: 78%;
+  }
+
+  .btn {
+    position: relative;
+    left: -114px;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu > li {
+    float: none;
+  }
 }
 /******************************************************************/

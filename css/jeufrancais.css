@@ -69,7 +69,9 @@
 }
 
 .menu {
-  display: inline-block;
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu > li {
@@ -81,6 +83,7 @@
   background: #2089ef;
   cursor: pointer;
   font-size: 1.5rem;
+  z-index: 1;
 }
 
 .sub-menu li a {
@@ -200,11 +203,11 @@
   position: absolute;
   bottom: 25%;
   border-radius: 36px 35px 0 0;
-  left: 8px;
+  left: 0.7%;
 }
 .container-calcul .calcul-ul .calcul-li .container-jeu:hover .container-item-jeu {
-  width: 1001px;
-  height: 579px;
+  width: 98%;
+  height: 88%;
   background-color: rgba(219, 54, 54, 0.815);
   border-radius: 40px;
   margin: auto;
@@ -282,6 +285,60 @@
   }
   .menu {
     margin-top: 39px;
+  }
+}
+/******************************************************************/
+/*******************MEDIA QUERY TABLETTE*****************************/
+@media screen and (max-width: 767px) {
+  .body-jeux {
+    margin: 0;
+  }
+  .main {
+    margin: O;
+  }
+  .logo {
+    margin: auto;
+  }
+  .search {
+    margin: auto;
+    margin-top: 42px;
+    width: 78%;
+  }
+  .btn {
+    position: relative;
+    left: -114px;
+  }
+  .menu {
+    padding: 0;
+  }
+  .menu > li {
+    float: none;
+  }
+  .calcul-ul {
+    padding: 0;
+  }
+  .calcul-ul .calcul-li {
+    width: 100%;
+  }
+  .calcul-ul .calcul-li .container-jeu {
+    width: 100%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu {
+    width: 98%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .calcul-intro {
+    left: 4%;
+    width: 47%;
+    bottom: 0%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom {
+    width: 96.4%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom .cours-btn-jeu {
+    left: 64%;
+  }
+  .calcul-ul .calcul-li .container-jeu .container-item-jeu .jeu-bottom .test-btn-jeu {
+    left: 81%;
   }
 }
 /******************************************************************//*# sourceMappingURL=jeufrancais.css.map */

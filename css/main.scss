@@ -54,18 +54,16 @@ $search-radius: 39px;
   .input-search {
     outline: none;
     position: relative;
-    left: 50px;
+    left: 7px;
     z-index: -1;
     box-shadow: 0px 0px 7px 2px #e0d8d8;
     border: $border-btn;
     border-radius: 39px;
     font-size: 1.3rem;
     padding: 19px 0 19px 20px;
-    // width: 5px;
-    animation: 2s ease-in 1s 2 reverse both paused;
 
     &:hover {
-      width: 100%;
+      background-color: $colorRose;
     }
   }
 }
@@ -88,45 +86,88 @@ $search-radius: 39px;
   font-size: 1.2rem;
 }
 
-.navbar {
-  background-color: $colorBleu;
-  height: 95px;
-  padding-top: 21px;
-  position: sticky;
-  top: 0;
-
-  .navbar-ul {
-    display: flex;
-    padding: 5px;
-    justify-content: space-around;
-
-    .navbar-li {
-      padding: 10px;
-      font-size: $font-size-nav;
-      border: 1px solid black;
-      text-align: center;
-      box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.3);
-
-      .navbar-link {
-        color: black;
-        &:hover {
-          text-decoration: underline $colorYellow;
-        }
-      }
-    }
-  }
+.nav {
+  text-align: center;
 }
-/******************************************************************/
 
-// .items-ul-jouer {
-//   border: 1px solid black;
+.navbar-li {
+  list-style-type: none;
+}
 
-//   .item-li-jouer {
-//     border: 1px solid black;
-//     padding: 7px;
-//   }
-// }
+.navbar-link {
+  color: black;
+}
 
+.menu {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu > li {
+  float: left;
+  color: $colorText;
+  width: 146px;
+  height: 85px;
+  line-height: 85px;
+  background: $colorBleu;
+  cursor: pointer;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.sub-menu {
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+}
+
+.sub-menu li {
+  font-size: 14px;
+  background: $colorBleuVert;
+  padding: 8px 0;
+  color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  transform-origin: top center;
+  transition: all 300ms ease-in-out;
+  list-style-type: none;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub-menu li:last-child {
+  border-bottom: 0;
+}
+
+.sub-menu li:hover {
+  background: $colorVert;
+}
+
+.menu > li:hover .sub-menu li {
+  transform: scale(1);
+}
+
+.menu > li:hover .sub-menu {
+  transform: scale(1);
+}
+
+.sub-link {
+  color: black;
+  text-decoration: none;
+}
+
+.details:hover {
+  color: $colorBeigt;
+}
+
+.items-icons {
+  color: $colorDetail;
+  font-size: 1.7rem;
+}
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {
   .logo {
@@ -151,16 +192,38 @@ $search-radius: 39px;
 }
 
 /******************************************************************/
+/*******************MEDIA QUERY TABLETTE*****************************/
+@media screen and (max-width: 767px) {
+  .body-jeux {
+    margin: 0;
+  }
+
+  .main {
+    margin: O;
+  }
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin: auto;
+    margin-top: 42px;
+    width: 78%;
+  }
+
+  .btn {
+    position: relative;
+    left: -114px;
+  }
+
+  .menu > li {
+    float: none;
+  }
+}
+/******************************************************************/
 
 @import "accueil.scss";
 @import "jeux.scss";
 @import "cours.scss";
 @import "profil.scss";
-
 @import "jeuxCalcul.scss";
-=======
-
-
-
-
-
