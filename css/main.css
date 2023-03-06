@@ -159,16 +159,19 @@
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
@@ -179,25 +182,31 @@
   .body-index {
     margin: 0;
   }
+
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
+
   .search .input-search {
     margin: auto;
     margin-top: 42px;
     width: 78%;
   }
+
   .btn {
     position: relative;
     bottom: -22px;
     left: -6px;
   }
+
   .menu {
     padding: 0;
   }
+
   .menu > li {
     float: none;
   }
@@ -234,7 +243,7 @@
 .titre-article-p1 {
   text-align: left;
   font-size: 15px;
-  color: rgb(3, 3, 26);
+  color: #03031a;
   font-family: Poppins sans-serif;
 }
 
@@ -248,7 +257,7 @@
   text-align: right;
   padding-left: 200px;
   font-size: 15px;
-  color: rgb(3, 3, 26);
+  color: #03031a;
   font-family: Poppins sans-serif;
 }
 
@@ -261,7 +270,7 @@
 .titre-article-p3 {
   text-align: right;
   font-size: 15px;
-  color: rgb(3, 3, 26);
+  color: #03031a;
   font-family: Poppins sans-serif;
 }
 
@@ -339,7 +348,8 @@ input[type=submit] {
   width: 400px;
   height: 300px;
   text-align: center;
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
+  /* Animation */
 }
 
 .petit-box:hover {
@@ -392,7 +402,8 @@ form {
   width: 400px;
   height: 300px;
   text-align: center;
-  transition: transform 0.2s; /* Animation */
+  transition: transform 0.2s;
+  /* Animation */
 }
 
 .moyen-box:hover {
@@ -425,12 +436,8 @@ input[type=text] {
   color: #f5f8fa;
 }
 
-input::-moz-placeholder {
-  color: rgb(53, 185, 180);
-}
-
 input::placeholder {
-  color: rgb(53, 185, 180);
+  color: #35b9b4;
 }
 
 input[type=checkbox] {
@@ -486,10 +493,12 @@ h5 {
     background-repeat: no-repeat;
     opacity: 80%;
   }
+
   .box {
     margin: auto;
     width: 200px;
   }
+
   .mb-3 {
     margin: auto;
   }
@@ -672,6 +681,7 @@ h5 {
   list-style-type: none;
 }
 .container-card .cards .card:hover {
+  -webkit-box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 4px 12px 1px rgba(0, 0, 0, 0.45);
 }
 .container-card .cards .card .jeuxNav {
@@ -701,26 +711,33 @@ h5 {
   .body-jeux {
     margin: 0;
   }
+
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
+
   .search {
     margin: auto;
     margin-top: 42px;
     width: 78%;
   }
+
   .btn {
     position: relative;
   }
+
   .menu {
     padding: 0;
   }
+
   .menu > li {
     float: none;
   }
+
   .calcul-ul {
     padding: 0;
   }
@@ -753,22 +770,27 @@ h5 {
   .body-jeux {
     margin: 0;
   }
+
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
@@ -934,18 +956,23 @@ footer {
   .cours-container {
     margin: auto;
   }
+
   .cours-illustration img {
     width: 350px;
   }
+
   .cours-colonne1 {
     box-sizing: content-box;
   }
+
   button {
     width: 100%;
   }
+
   .cours-bulle {
     font-size: 20px;
   }
+
   .cours-reseaux {
     cursor: pointer;
   }
@@ -1009,7 +1036,7 @@ Les classes drop vont nous permettre d’afficher des petits nuages transparents
 }
 
 .body-profil a:hover {
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 2px 2px 6px #00000040;
 }
 
 .body-profil a:active {
@@ -1115,9 +1142,11 @@ input[type=password]:focus {
   .body-profil p {
     font-size: 1.2rem;
   }
+
   .body-profil input {
     width: 160px;
   }
+
   .body-profil .headerlogo img {
     width: 60px;
   }
@@ -1213,8 +1242,10 @@ font-family: 'Poppins', sans-serif;*/
 
 .felicitation-body section {
   /*background: linear-gradient(45deg, #2089ef, #ffdeac);*/
-  background: rgb(255, 222, 172);
-  background: linear-gradient(45deg, rgb(255, 222, 172) 10%, rgb(32, 137, 239) 45%, rgb(255, 222, 172) 90%);
+  background: #ffdeac;
+  background: -moz-linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
+  background: -webkit-linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
+  background: linear-gradient(45deg, #ffdeac 10%, #2089ef 45%, #ffdeac 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffdeac",endColorstr="#ffdeac",GradientType=1);
   background-size: cover;
   height: 100vh;
@@ -1267,6 +1298,7 @@ font-family: 'Poppins', sans-serif;*/
   h1 {
     font-size: 36px;
   }
+
   .felicitation-choix {
     gap: 35px;
   }
@@ -1427,18 +1459,23 @@ footer {
   .cours-container {
     margin: auto;
   }
+
   .cours-illustration img {
     width: 350px;
   }
+
   .cours-colonne1 {
     box-sizing: content-box;
   }
+
   button {
     width: 100%;
   }
+
   .cours-bulle {
     font-size: 20px;
   }
+
   .cours-reseaux {
     cursor: pointer;
   }
@@ -1502,7 +1539,7 @@ Les classes drop vont nous permettre d’afficher des petits nuages transparents
 }
 
 .body-profil a:hover {
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2509803922);
+  text-shadow: 2px 2px 6px #00000040;
 }
 
 .body-profil a:active {
@@ -1608,9 +1645,11 @@ input[type=password]:focus {
   .body-profil p {
     font-size: 1.2rem;
   }
+
   .body-profil input {
     width: 160px;
   }
+
   .body-profil .headerlogo img {
     width: 60px;
   }
@@ -1648,7 +1687,7 @@ ol li {
   font-size: 1.2rem;
   padding: 20px 30px;
   margin: 10px 0;
-  background: rgb(23, 23, 23);
+  background: #171717;
   z-index: 5;
   position: relative;
   cursor: pointer;
@@ -1787,20 +1826,25 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .headerlogo {
     width: 50%;
     margin-top: 0;
   }
+
   .profil-utilisateur {
     width: 80px;
     height: 80px;
   }
+
   .presentation-profil {
     margin-top: 10px;
   }
+
   .flex-box {
     flex-direction: column;
   }
+
   .sections {
     width: 100%;
     margin-left: 0;
@@ -1808,14 +1852,17 @@ body {
     margin-top: 0;
     padding-bottom: 0;
   }
+
   .arbreprogression {
     width: 100%;
     text-align: center;
   }
+
   .imgarbre {
     width: 80%;
     padding: 0;
   }
+
   .timeline {
     width: 80%;
     margin: 0 auto;
@@ -2034,7 +2081,7 @@ body {
   justify-content: center;
   align-content: center;
 }
-.container-calcul .calcul-ul .calcul-li .container-jeu:hover .ecran .pnj {
+.container-calcul .calcul-ul .calcul-li .container-jeu:hover .pnj {
   display: flex;
   border: 1px solid black;
   width: 50px;
@@ -2107,26 +2154,33 @@ body {
   .body-jeux {
     margin: 0;
   }
+
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
+
   .search {
     margin: auto;
     margin-top: 42px;
     width: 78%;
   }
+
   .btn {
     position: relative;
   }
+
   .menu {
     padding: 0;
   }
+
   .menu > li {
     float: none;
   }
+
   .calcul-ul {
     padding: 0;
   }
@@ -2160,21 +2214,27 @@ body {
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
+
   .menu {
     margin-top: 39px;
   }
 }
-/******************************************************************//*# sourceMappingURL=main.css.map */
+/******************************************************************/
+
+/*# sourceMappingURL=main.css.map */

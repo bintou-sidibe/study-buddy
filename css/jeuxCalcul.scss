@@ -242,7 +242,7 @@ $border-jeu: 40px;
             display: flex;
             justify-content: center;
             align-content: center;
-
+          }
             .pnj {
               display: flex;
               border: 1px solid black;
@@ -251,7 +251,6 @@ $border-jeu: 40px;
               background-color: white;
               border-radius: 100%;
             }
-          }
 
           .container-item-jeu {
             width: 1001px;
