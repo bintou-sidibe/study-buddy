@@ -1,13 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
-body {
-  background-image: url(/css/images/background3.avif);
-  background-size: cover;
+.body-acceuil {
+  background-image: url(/css/images/BG-2.avif);
   background-repeat: no-repeat;
+  background-size: cover;
   opacity: 80%;
 }
 
-h2, h1 {
+.newsletter-accueil {
   font-family: Poppins sans-serif;
+}
+
+.text-centre {
+  text-align: center;
+  font-family: Poppins sans-serif;
+}
+
+.article-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titre-article-h1 {
+  text-align: left;
+  padding-right: 200px;
+  size: 18px !important;
+  font-family: Poppins sans-serif;
+}
+
+.titre-article-p1 {
+  text-align: left;
+  size: 15px;
+  color: rgb(3, 3, 26);
+  font-family: Poppins sans-serif;
+}
+
+.titre-article-h2 {
+  text-align: right;
+  size: 18px;
+  font-family: Poppins sans-serif;
+}
+
+.titre-article-p2 {
+  text-align: right;
+  padding-left: 200px;
+  size: 15px;
+  color: rgb(3, 3, 26);
+  font-family: Poppins sans-serif;
+}
+
+.titre-article-h3 {
+  text-align: right;
+  size: 18px;
+  font-family: Poppins sans-serif;
+}
+
+.titre-article-p3 {
+  text-align: right;
+  size: 15px;
+  color: rgb(3, 3, 26);
+  font-family: Poppins sans-serif;
+}
+
+.article-page-1 {
+  background-image: url(/Css/Images/slide2.avif);
+  border: 1px solid black;
+  height: 170px;
+  width: 600px;
+}
+
+.article-page-2 {
+  background-image: url(/Css/Images/slide-joyeuse.avif);
+  border: 1px solid black;
+  height: 170px;
+  width: 600px;
+}
+
+.article-page-3 {
+  background-image: url(/Css/Images/photobourse.avif);
+  border: 1px solid black;
+  height: 170px;
+  width: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.card-title {
+  size: 1em;
 }
 
 .titre {
@@ -20,8 +106,8 @@ h2, h1 {
   font-size: 58px;
 }
 
-h2 {
-  font-size: 24px;
+.tire > h2 {
+  font-size: 24px important;
 }
 
 input[type=submit] {
@@ -33,9 +119,13 @@ input[type=submit] {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 50px;
   box-shadow: #ffaae9;
   gap: 60px;
+}
+
+.class-avis {
+  text-align: center;
 }
 
 .petit-box {
@@ -46,11 +136,21 @@ input[type=submit] {
   width: 400px;
   height: 300px;
   text-align: center;
+  transition: transform 0.2s; /* Animation */
+}
+
+.petit-box:hover {
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 form {
   border: 1px solid #f6f8f9;
   border-radius: 46px;
+}
+
+.carousel-caption > h5 {
+  color: #043e79;
 }
 
 .boite {
@@ -61,6 +161,7 @@ form {
   background-color: #f1f1f1;
   width: 400px;
   border-radius: 46px;
+  margin-top: 5em;
 }
 
 #carouselExampleCaptions {
@@ -88,6 +189,13 @@ form {
   width: 400px;
   height: 300px;
   text-align: center;
+  transition: transform 0.2s; /* Animation */
+}
+
+.moyen-box:hover {
+  transform: scale(1.5);
+  border: 5px black;
+  box-shadow: #043e79;
 }
 
 .couleur {
@@ -97,20 +205,48 @@ form {
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 12px;
-  margin: 8px 0;
+  margin: 25px 0;
   display: inline-block;
   border: 1px solid #f6f8f9;
   box-sizing: border-box;
   font-family: Poppins;
 }
 
+.mb-3 {
+  width: 30em;
+  margin: left 30px;
+}
+
 input[type=text] {
   font-family: Poppins;
-  color: #2089ef important;
+  color: #f5f8fa;
+}
+
+input::-moz-placeholder {
+  color: rgb(53, 185, 180);
+}
+
+input:-ms-input-placeholder {
+  color: rgb(53, 185, 180);
+}
+
+input::placeholder {
+  color: rgb(53, 185, 180);
 }
 
 input[type=checkbox] {
   margin-top: 16px;
+}
+
+.input-check-news-letter {
+  width: 20px;
+}
+
+.boite > h2 {
+  font-size: 2em;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
 }
 
 input[type=submit] {
@@ -126,7 +262,7 @@ input[type=submit]:hover {
 }
 
 #carouselExampleCaptions {
-  width: 600px;
+  width: 50em;
   margin-bottom: 30px;
 }
 
@@ -138,12 +274,25 @@ h5 {
   border-radius: 46px;
 }
 
+.accueil-avis {
+  text-align: center;
+  font-family: Poppins;
+  margin-top: 1em;
+}
+
 @media (max-width: 375px) {
   body {
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 80%;
+  }
+  .box {
+    margin: auto;
+    width: 200px;
+  }
+  .mb-3 {
+    margin: auto;
   }
   #carouselExampleCaptions {
     margin: auto;
