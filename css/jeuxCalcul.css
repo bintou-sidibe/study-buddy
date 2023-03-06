@@ -197,6 +197,7 @@
   display: none;
 }
 .container-calcul .calcul-ul .calcul-li .container-jeu:hover .ecran {
+  flex-wrap: wrap;
   background-color: white;
   background-image: linear-gradient(0deg, #23760d 23%, #3dabbe 25%);
   border: 1px solid;
@@ -207,6 +208,8 @@
   border-radius: 36px 35px 0 0;
   left: 8px;
   display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .container-calcul .calcul-ul .calcul-li .container-jeu:hover .ecran .pnj {
   display: flex;
