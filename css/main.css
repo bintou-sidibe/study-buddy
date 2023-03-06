@@ -76,6 +76,7 @@
   background-color: #2089ef;
   height: 95px;
   padding-top: 21px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -739,6 +740,10 @@ input[type=password]:focus {
   color: #fff;
 }
 
+.body-profil :-ms-input-placeholder {
+  color: #fff;
+}
+
 .body-profil ::placeholder {
   color: #fff;
 }
@@ -1226,6 +1231,10 @@ input[type=password]:focus {
 }
 
 .body-profil ::-moz-placeholder {
+  color: #fff;
+}
+
+.body-profil :-ms-input-placeholder {
   color: #fff;
 }
 

@@ -105,6 +105,10 @@ input[type=password]:focus {
   color: #fff;
 }
 
+.body-profil :-ms-input-placeholder {
+  color: #fff;
+}
+
 .body-profil ::placeholder {
   color: #fff;
 }
