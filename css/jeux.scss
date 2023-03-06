@@ -209,7 +209,8 @@ $border-p-jeu: 40px;
       }
 
       .matieres {
-        background-color: #73a5ca;
+        background-color: $colorBleuVert;
+        background-image: linear-gradient($colorBleu, $colorBleuVert);
         height: 185px;
         width: 281px;
         text-align: center;

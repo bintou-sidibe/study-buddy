@@ -179,7 +179,8 @@
   color: black;
 }
 .container-card .cards .card .matieres {
-  background-color: #73a5ca;
+  background-color: #8aefca;
+  background-image: linear-gradient(#2089ef, #8aefca);
   height: 185px;
   width: 281px;
   text-align: center;

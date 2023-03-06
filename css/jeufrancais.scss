@@ -308,7 +308,7 @@ $border-jeu: 40px;
 }
 
 /*******************MEDIA QUERY TABLETTE*****************************/
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 375px) and (max-width: 767px) {
   .body-jeux {
     margin: 0;
   }

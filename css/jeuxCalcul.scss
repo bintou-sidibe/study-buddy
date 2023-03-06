@@ -194,9 +194,8 @@ $border-jeu: 40px;
         border-radius: $border-jeu;
         width: 200px;
         height: 200px;
-        display: flex;
-        justify-content: center;
         align-items: center;
+        margin: auto;
 
         .icon-oeil {
           opacity: 0.6;
