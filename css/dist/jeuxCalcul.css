@@ -284,26 +284,33 @@
   .body-jeux {
     margin: 0;
   }
+
   .main {
     margin: O;
   }
+
   .logo {
     margin: auto;
   }
+
   .search {
     margin: auto;
     margin-top: 42px;
     width: 78%;
   }
+
   .btn {
     position: relative;
   }
+
   .menu {
     padding: 0;
   }
+
   .menu > li {
     float: none;
   }
+
   .calcul-ul {
     padding: 0;
   }
@@ -337,21 +344,25 @@
   .logo {
     margin: auto;
   }
+
   .search {
     margin-top: 39px;
   }
   .search .input-search {
     left: 6px;
   }
+
   .btn {
     right: 61px;
     position: relative;
   }
+
   .menu > li {
     float: none;
   }
+
   .menu {
     margin-top: 39px;
   }
 }
-/******************************************************************//*# sourceMappingURL=jeuxCalcul.css.map */
+/******************************************************************/
