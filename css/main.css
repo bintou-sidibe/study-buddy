@@ -502,7 +502,6 @@ h5 {
   .mb-3 {
     margin: auto;
   }
-
   #carouselExampleCaptions {
     margin: auto;
     width: 400px;
@@ -1083,10 +1082,6 @@ input[type=password]:focus {
   color: #fff;
 }
 
-.body-profil :-ms-input-placeholder {
-  color: #fff;
-}
-
 .body-profil ::placeholder {
   color: #fff;
 }
@@ -1159,7 +1154,7 @@ input[type=password]:focus {
 /*CSS rules to specify families
 font-family: 'Poppins', sans-serif;*/
 /* Couleurs du  logo
-Bleu : 2089EF
+Bleu : #2089EF
 Bleu-vert: #8AEAFCA
 Beige : #FFDEAC
 Vert : #DAF189
@@ -1175,7 +1170,7 @@ Rose : #FFAAE9
 .quiz-body h1 {
   font-family: Poppins, sans-serif;
   font-size: 100px;
-  color: black;
+  color: darkblue;
   text-align: center;
 }
 
@@ -1185,6 +1180,8 @@ Rose : #FFAAE9
   width: 80%;
   padding: 20px;
   max-width: 700px;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
 .quiz-body fieldset {
@@ -1224,6 +1221,7 @@ Rose : #FFAAE9
   min-width: 300px;
   border-radius: 46px;
   border: 1px;
+  padding-bottom: 35px;
 }
 
 .quiz-body input[type=submit]:hover {
@@ -1584,10 +1582,6 @@ input[type=password]:focus {
 }
 
 .body-profil ::-moz-placeholder {
-  color: #fff;
-}
-
-.body-profil :-ms-input-placeholder {
   color: #fff;
 }
 
