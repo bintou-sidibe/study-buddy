@@ -87,19 +87,35 @@ $border-jeu: 40px;
   text-align: center;
 }
 
+.navbar-li {
+  list-style-type: none;
+}
+
+.navbar-link {
+  color: black;
+}
+
 .menu {
-  display: inline-block;
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu > li {
   float: left;
   color: $colorText;
-  width: 167px;
+  width: 146px;
   height: 85px;
   line-height: 85px;
   background: $colorBleu;
   cursor: pointer;
   font-size: 1.5rem;
+  z-index: 1;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color: black;
 }
 
 .sub-menu {
@@ -117,6 +133,7 @@ $border-jeu: 40px;
   transform: scale(0);
   transform-origin: top center;
   transition: all 300ms ease-in-out;
+  list-style-type: none;
 }
 
 .sub-menu li:last-child {
@@ -137,6 +154,7 @@ $border-jeu: 40px;
 
 .sub-link {
   color: black;
+  text-decoration: none;
 }
 
 .details:hover {
@@ -169,6 +187,7 @@ $border-jeu: 40px;
     margin-top: 50px;
 
     .calcul-li {
+      list-style-type: none;
       .container-jeu {
         opacity: 0.3;
         background-image: linear-gradient($colorRose, $colorVert);
@@ -215,12 +234,12 @@ $border-jeu: 40px;
             position: absolute;
             bottom: 25%;
             border-radius: 36px 35px 0 0;
-            left: 8px;
+            left: 0.7%;
           }
 
           .container-item-jeu {
-            width: 1001px;
-            height: 579px;
+            width: 98%;
+            height: 88%;
             background-color: rgba(219, 54, 54, 0.815);
             border-radius: $border-jeu;
             margin: auto;
@@ -288,6 +307,72 @@ $border-jeu: 40px;
   }
 }
 
+/*******************MEDIA QUERY TABLETTE*****************************/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .body-jeux {
+    margin: 0;
+  }
+
+  .main {
+    margin: O;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .search {
+    margin-top: 42px;
+    width: 78%;
+    .input-search {
+      left: 11px;
+    }
+  }
+
+  .btn {
+    position: relative;
+    right: 35px;
+  }
+
+  .menu {
+    padding: 0;
+  }
+
+  .menu > li {
+    float: none;
+  }
+
+  .calcul-ul {
+    padding: 0;
+    .calcul-li {
+      width: 100%;
+      .container-jeu {
+        width: 100%;
+        .container-item-jeu {
+          width: 98%;
+
+          .calcul-intro {
+            left: 4%;
+            width: 47%;
+            bottom: 0%;
+          }
+          .jeu-bottom {
+            width: 96.4%;
+
+            .cours-btn-jeu {
+              left: 64%;
+            }
+            .test-btn-jeu {
+              left: 81%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/******************************************************************/
+
 /*******************MEDIA QUERY MOBILE*****************************/
 @media screen and (max-width: 375px) {
   .logo {
@@ -304,6 +389,9 @@ $border-jeu: 40px;
   .btn {
     right: 61px;
     position: relative;
+  }
+  .nav {
+    display: none;
   }
 
   .menu > li {
