@@ -5,91 +5,235 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css" >
+    <script
+      src="https://kit.fontawesome.com/2f202ef2b9.js"
+      crossorigin="anonymous"></script>
 </head>
 <body class="quiz-body">
+    <header class="container-header">
+        <img
+          src="../images/logoCouleur.png"
+          class="logo"
+          alt="logo de l entreprise study-Buddy pour l'éducation"
+        />
+        <div class="search">
+          <input
+            type="search"
+            class="input-search"
+            placeholder="Rechercher..."
+          />
+          <button class="btn">
+            <i class="fa-solid fa-magnifying-glass icon-loupe"></i>
+          </button>
+        </div>
+      </header>
+
+      <!---------------------------NAV-------------------------->
+      <nav class="nav">
+        <ul class="menu">
+          <li class="navbar-li">
+            <a class="navbar-link" href="../index.html">
+              <i class="fa-solid fa-house details items-icons"></i>
+            </a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-link" href="./jeux.html">
+              <i class="fa-solid fa-gamepad items-icons"></i>
+            </a>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="../jeux/jeufrancais.html" class="sub-link">Francais</a>
+              </li>
+              <li class="sub-menu-li">
+                <a href="../jeux/jeuxCalcul.html" class="sub-link"
+                  >Mathématiques</a
+                >
+              </li>
+              <li class="sub-menu-li">
+                <a href="langue.html" class="sub-link">Langues vivantes</a>
+              </li>
+              <li class="sub-menu-li">
+                <a href="dessin.html" class="sub-link">Dessin</a>
+              </li>
+              <li class="sub-menu-li">
+                <a href="philo.html" class="sub-link">Philosophie</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <a href="cours.html" class="navbar-link">
+              <i class="fa-solid fa-book items-icons"></i>
+            </a>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">Francais</li>
+              <li class="sub-menu-li">Mathématique</li>
+              <li class="sub-menu-li">Langue vivante</li>
+              <li class="sub-menu-li">Dessin</li>
+              <li class="sub-menu-li">Philosophie</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <i class="fa-solid fa-question items-icons"></i>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="quiz.html" class="navbar-link">Quiz</a>
+              </li>
+              <li class="sub-menu-li">:p</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <i class="fa-solid fa-blog items-icons"></i>
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="blog.html" class="navbar-link">Blog</a>
+              </li>
+              <li class="sub-menu-li">;p</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <i class="fa-solid fa-hands-holding-circle items-icons"></i>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="agir.html" class="navbar-link">Agir en semble</a>
+              </li>
+              <li class="sub-menu-li">8D</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <i class="fa-solid fa-users-between-lines items-icons"></i>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="nous.html" class="navbar-link">Qui sommes nous</a>
+              </li>
+              <li class="sub-menu-li">;B</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <i class="fa-solid fa-mobile-screen-button items-icons"></i>
+
+            <ul class="sub-menu">
+              <li class="sub-menu-li">
+                <a href="contact" class="navbar-link">Nous contacter</a>
+              </li>
+              <li class="sub-menu-li">XD</li>
+            </ul>
+          </li>
+
+          <li class="navbar-li">
+            <a href="#" class="navbar-link">
+              <i
+                class="fa-sharp fa-solid fa-right-to-bracket details items-icons"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-------------------------------------------------------->
+
     <h1 id="title">Quiz</h1>
     <form method="GET" action="felicitation.html">
             <fieldset>
                 <label class="label-quiz">1/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool" name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso" name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">2/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
-                <label class="label-quiz">3/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label class="label-quiz" >3/ It is fun and happy to code for you ?</label>
+                <label for="amazing"><type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool" name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso" name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">4/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">5/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi"ame="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool" name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso" name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">6/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">7/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">8/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">9/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <fieldset>
                 <label class="label-quiz">10/ It is fun and happy to code for you ?</label>
-                <label for="amazing"><input id="amazing" type="radio" value="amazi" name="account-type" class="inline" /> Amazing !!</label>
+                <label for="amazing"><input type="radio" value="amazi" name="account-type"/> Amazing !!</label>
                 <hr>
-                <label for="cool"><input id="cool" type="radio" value="coolcool"  name="account-type" class="inline" /> It's cool !</label>
+                <label for="cool"><input type="radio" value="coolcool"  name="account-type"/> It's cool !</label>
                 <hr>
-                <label for="so so"><input id="So so" type="radio" value="soso"  name="account-type" class="inline" /> So so</label>
+                <label for="so so"><input type="radio" value="soso"  name="account-type"/> So so</label>
             </fieldset>
             <input id="submit" type="submit" value="Envoyer"></input>
     </form> 
+    <footer>
+        <div class="cours-aide">Info & Conseils</div>
+        <div class="cours-reseaux">
+            <div class="linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+            <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+        </div>
+      </footer>
 </body>
+
 

@@ -6,6 +6,7 @@
   text-decoration: none;
 }
 
+
 /******************COULEUR******************************/
 $colorBeigt: #ffdeac;
 $colorYellow: #ffe900;
@@ -162,7 +163,9 @@ $search-radius: 39px;
 
 .details:hover {
   color: $colorBeigt;
+
   }
+
 
 .items-icons {
   color: $colorDetail;
@@ -238,6 +241,3 @@ $search-radius: 39px;
 @import "profil.scss";
 @import "page-profil.scss";
 @import "jeuxCalcul.scss";
-
-
-

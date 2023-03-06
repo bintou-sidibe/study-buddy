@@ -226,10 +226,6 @@ input::-moz-placeholder {
   color: rgb(53, 185, 180);
 }
 
-input:-ms-input-placeholder {
-  color: rgb(53, 185, 180);
-}
-
 input::placeholder {
   color: rgb(53, 185, 180);
 }
