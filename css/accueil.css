@@ -24,40 +24,40 @@
 .titre-article-h1 {
   text-align: left;
   padding-right: 200px;
-  size: 18px !important;
+  font-size: 18px;
   font-family: Poppins sans-serif;
 }
 
 .titre-article-p1 {
   text-align: left;
-  size: 15px;
+  font-size: 15px;
   color: rgb(3, 3, 26);
   font-family: Poppins sans-serif;
 }
 
 .titre-article-h2 {
   text-align: right;
-  size: 18px;
+  font-size: 18px;
   font-family: Poppins sans-serif;
 }
 
 .titre-article-p2 {
   text-align: right;
   padding-left: 200px;
-  size: 15px;
+  font-size: 15px;
   color: rgb(3, 3, 26);
   font-family: Poppins sans-serif;
 }
 
 .titre-article-h3 {
   text-align: right;
-  size: 18px;
+  font-size: 18px;
   font-family: Poppins sans-serif;
 }
 
 .titre-article-p3 {
   text-align: right;
-  size: 15px;
+  font-size: 15px;
   color: rgb(3, 3, 26);
   font-family: Poppins sans-serif;
 }
