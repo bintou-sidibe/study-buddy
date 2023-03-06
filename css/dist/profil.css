@@ -29,7 +29,7 @@
 
 /*Jusqu’à maintenant, nous ne faisons qu’aligner au centre notre formulaire grâce à Flexbox.
 Les classes drop vont nous permettre d’afficher des petits nuages transparents autour de notre formulaire.*/
-form {
+.body-profil form {
   background: rgba(255, 255, 255, 0.3);
   padding: 3rem;
   border-radius: 20px;
@@ -43,7 +43,7 @@ form {
 }
 
 /*Stylisons maintenant les textes.*/
-p {
+.body-profil p {
   color: #2089ef;
   font-weight: 500;
   opacity: 0.7;
@@ -52,22 +52,22 @@ p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-a {
+.body-profil a {
   text-decoration: none;
   color: #2089ef;
   font-size: 12px;
 }
 
-a:hover {
+.body-profil a:hover {
   text-shadow: 2px 2px 6px #00000040;
 }
 
-a:active {
+.body-profil a:active {
   text-shadow: none;
 }
 
 /*Passons aux inputs.*/
-input {
+.body-profil input {
   background: transparent;
   border: none;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
@@ -87,21 +87,21 @@ input {
 }
 
 /*Stylisons les interactions.*/
-input:hover,
+.body-profil input:hover,
 input[type=email]:focus,
 input[type=password]:focus {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
 }
 
-input[type=button] {
+.body-profil input[type=button] {
   margin-top: 10px;
   width: 150px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-::placeholder {
+.body-profil ::placeholder {
   color: #fff;
 }
 
@@ -158,15 +158,15 @@ input[type=button] {
 }
 
 @media only screen and (max-width: 768px) {
-  p {
+  .body-profil p {
     font-size: 1.2rem;
   }
 
-  input {
+  .body-profil input {
     width: 160px;
   }
 
-  .headerlogo img {
+  .body-profil .headerlogo img {
     width: 60px;
   }
 }
