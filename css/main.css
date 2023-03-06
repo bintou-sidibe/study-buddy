@@ -612,6 +612,10 @@ h5 {
 }
 
 /******************************************************************/
+body {
+  background-image: url(/css/images/background3.avif);
+}
+
 .cours-bulle {
   display: flex;
   align-items: center;
@@ -889,15 +893,11 @@ input[type=password]:focus {
   color: #fff;
 }
 
-
-:-ms-input-placeholder {
+.body-profil :-ms-input-placeholder {
   color: #fff;
 }
 
-::placeholder {
-
 .body-profil ::placeholder {
-
   color: #fff;
 }
 
@@ -1110,6 +1110,10 @@ font-family: 'Poppins', sans-serif;*/
     gap: 35px;
   }
 }
+body {
+  background-image: url(/css/images/background3.avif);
+}
+
 .cours-bulle {
   display: flex;
   align-items: center;
@@ -1387,11 +1391,9 @@ input[type=password]:focus {
   color: #fff;
 }
 
-:-ms-input-placeholder {
+.body-profil :-ms-input-placeholder {
   color: #fff;
 }
-
-::placeholder {
 
 .body-profil ::placeholder {
   color: #fff;
