@@ -6,91 +6,267 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" ype="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="/css/IMAGES/fontawesome-free-6.3.0-web copie/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>page-accueil</title>
 </head>
+<div class="main">
+    <header class="container-header">
+      <img
+        src="../images/logoCouleur.png"
+        class="logo"
+        alt="logo de l entreprise study-Buddy pour l'éducation"
+      />
+      <div class="search">
+        <input
+          type="search"
+          class="input-search"
+          placeholder="Rechercher..."
+        />
+        <button class="btn">
+          <i class="fa-solid fa-magnifying-glass icon-loupe"></i>
+        </button>
+      </div>
+    </header>
 
-<body>
-    <div class="titre">Amusez-vous en apprenant !!</div>
-    
-   
-    <div class="box">
-        <div class="petit-box">
-            <img src="/css/images/photo1.png" class="photo" height="300px" width="400px" alt="online">
-        </div>
+<body class="body-acceuil">
+    <nav class="nav">
+        <ul class="menu">
+            <li class="navbar-li">
+                <a class="navbar-link" href="../index.html">
+                    <i class="fa-solid fa-house details items-icons"></i>
+                </a>
+            </li>
+
+            <li class="navbar-li">
+                <a class="navbar-link" href="./jeux/jeux.html">
+                    <i class="fa-solid fa-gamepad items-icons"></i>
+                </a>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="./jeux/jeufrancais.html" class="sub-link">Francais</a>
+                    </li>
+                    <li class="sub-menu-li">
+                        <a href="./jeux/jeuxCalcul.html" class="sub-link">Mathématiques</a>
+                    </li>
+                    <li class="sub-menu-li">
+                        <a href="langue.html" class="sub-link">Langues vivantes</a>
+                    </li>
+                    <li class="sub-menu-li">
+                        <a href="dessin.html" class="sub-link">Dessin</a>
+                    </li>
+                    <li class="sub-menu-li">
+                        <a href="philo.html" class="sub-link">Philosophie</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <a href="cours.html" class="navbar-link">
+                    <i class="fa-solid fa-book items-icons"></i>
+                </a>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">Francais</li>
+                    <li class="sub-menu-li">Mathématique</li>
+                    <li class="sub-menu-li">Langue vivante</li>
+                    <li class="sub-menu-li">Dessin</li>
+                    <li class="sub-menu-li">Philosophie</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <i class="fa-solid fa-question items-icons"></i>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="quiz.html" class="navbar-link">Quiz</a>
+                    </li>
+                    <li class="sub-menu-li">:p</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <i class="fa-solid fa-blog items-icons"></i>
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="blog.html" class="navbar-link">Blog</a>
+                    </li>
+                    <li class="sub-menu-li">;p</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <i class="fa-solid fa-hands-holding-circle items-icons"></i>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="agir.html" class="navbar-link">Agir en semble</a>
+                    </li>
+                    <li class="sub-menu-li">8D</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <i class="fa-solid fa-users-between-lines items-icons"></i>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="nous.html" class="navbar-link">Qui sommes nous</a>
+                    </li>
+                    <li class="sub-menu-li">;B</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <i class="fa-solid fa-mobile-screen-button items-icons"></i>
+
+                <ul class="sub-menu">
+                    <li class="sub-menu-li">
+                        <a href="contact" class="navbar-link">Nous contacter</a>
+                    </li>
+                    <li class="sub-menu-li">XD</li>
+                </ul>
+            </li>
+
+            <li class="navbar-li">
+                <a href="#" class="navbar-link">
+                    <i class="fa-sharp fa-solid fa-right-to-bracket details items-icons"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <!--PRESENTATION DU SITE-->
+        <h1 class="titre"> Bienvenue chez Study Buddy ! </h1>
+    <div class="article-card">    
+        <section class="article-page">   
+            <article class="article-page-1">
+                <h2 class="titre-article-h1">Trouver ici les meilleures Universités</h2>
+                <p class="titre-article-p1">Lorem ipsum dolor sit amet consectetur.</p>
+            </article>
+            <article class="article-page-2">
+                <h2 class="titre-article-h2">Vous etes profs et vous cherchez un complément de revenu?</h2>
+                <p class="titre-article-p2">Partager vos jeux éducatifs et soyez rémuneré à chaque utilisation</p>
+            </article>
+            <article class="article-page-3">
+                <h2 class="titre-article-h3">Comment obtenir une bourse?</h2>
+                <p class="titre-article-p3">Lorem ipsum dolor sit amet consectetur.</p>
+            </article>
+        </section>  
+                <div class="card mb-3  ">
+                    <div class="card m-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Apprendre en famille, cela n'a pas prix !</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to.</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                        <img src="/css/images/famille-heureuse.avif" class="card-img-bottom" alt="...">
+                    </div>
+                </div> 
+    </div>
+    <!--AMINATION AMUSANTE-->
+        <section>      
+            <h2 class="titre">Amusez-vous en apprenant !!</h2>
+            <div class="box">
+                <div class="petit-box">
+                    <img src="/css/images/photo1.png" class="photo" height="300px" width="400px" alt="online">
+                </div>
+                <div class="moyen-box">
+                    <img src="/css/images/photo2.png" class="photo" height="300px" width="400px" alt="online">
+                </div>
+            </div>
+        </section>
 
         <div class="boite">
-            <h2>Abonnez vous à la newsletter</h2>
+            <h2 class="newsletter-accueil">Abonnez vous à la newsletter</h2>
             <form action="action_page.php">
                 <div class="boite-nom" style="background-color:#f6f8f9">
                     <input type="text" placeholder=" addresse Email" name="mail" required>
                     <label>
-                        <input type="checkbox" checked="checked" name="s'abonnez"> je veux recevoir la Newsletter
+                        <input class="input-check-news-letter" type="checkbox" checked="checked"
+                            name="s'abonnez"> je veux recevoir la Newsletter
                     </label>
                 </div>
                 <div class="boite-bouton">
                     <input type="submit" value="Subscribe">
                 </div>
             </form>
-            </div>
-
-        <div class="moyen-box">
-            <img src="/css/images/photo2.png" class="photo" height="300px" width="400px" alt="online">
         </div>
-    </div>
 
+        <div>
+<!--CAROUSSEL D'AVIS CLIENTS-->
+            <h3 class="accueil-avis">Ils nous on valider</h3>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="css/images/IMAGE12.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Emma:"Expérience unique"</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="css/images/image10.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Aya:"Je m'amuses en corrigeant mes fautes d'ortographes."</h5>
 
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="css/images/image11H.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Pierre:"Je recommande."</h5>
+                        </div>
+                    </div>
+                </div>
+                <span class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </span>
+                <span class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </span>
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="css/images/IMAGE12.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Emma:"Expérience unique"</h5>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="css/images/image10.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Aya:"Je m'amuses en corrigeant mes fautes d'ortographes."</h5>
-                    
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="css/images/image11H.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Pierre:"Je recommande."</h5>
-                   
-                </div>
-            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+        <h4 class="titre-partenaires">Nos partenaires</h4>
+        <div class="cours-partenaires">
+            <div><img src="css/IMAGES/10.webp" alt="IMAGE1" width="140px"></div>
+            <div><img src="css/IMAGES/axa image.webp" alt="image2" width="140px"></div>
+            <div><img src="css/IMAGES/logo ile de france.webp" alt="image3" width="140px"></div>
+            <div><img src="css/IMAGES/sap image.webp" alt="image4" width="140px"></div>
+            <div><img src="css/IMAGES/selforce.webp" alt="image5" width="140px"></div>
+            <div><img src="css/IMAGES/societe generale.webp" alt="image6" width="140px"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-        crossorigin="anonymous"></script>
+        <footer>
+            <div class="cours-aide">Info & Conseils</div>
+            <div class="cours-reseaux">
+                <div class="linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+            </div>
+        </footer>
 
 </body>
 
